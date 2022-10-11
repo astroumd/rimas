@@ -1,0 +1,16 @@
+TODO List
+
+SCRIPTS
+Fix script editor to not erase current script when changing name.
+Allow seletction of script using file dialog.
+Add Macro command to scripting language.
+
+SUBSYSTEMS
+Fix filter wheel so that it doesn't lose the configuration sometimes.
+Add CryoCooler subsystem
+Add Temp and Pressure subsystem
+Add focus to telescope interface
+Write test scripts for all subsystems.
+
+DATA
+Check that data is stored properly.

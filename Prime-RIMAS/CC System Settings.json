@@ -1,0 +1,415 @@
+{
+  "CryoCooler Settings":{
+    "CryoTek 1 Addr":"COM5",
+    "CryoTek 2 Addr":"COM6"
+  },
+  "Detector Config Default":{
+    "Detector Computer":{
+      "FITS File Path":"/local/data/fermi-grb1/home/rimas/dev/h2rg/fitdat",
+      "Header Path":"/local/data/fermi-grb1/home/rimas/dev/h2rg/header",
+      "Machine":"192.168.121.11",
+      "Name":"Default",
+      "Password":"R!MAS1grb",
+      "Port":44444
+    },
+    "Detector":0,
+    "FITS Data File Path":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\PRIME FITS Images",
+    "FITS Detector Settings":{
+      "# of Frames":1,
+      "# of Groups":1,
+      "Exp Time Long":2,
+      "Exp Time Short":1,
+      "Image Type":"",
+      "Object Name":"",
+      "Object":"",
+      "Obs Type":"",
+      "Observer Affiliation":"",
+      "Observer":""
+    },
+    "FITS hdr template0":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\FITS Templates\\header0.dat",
+    "FITS hdr template1":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\FITS Templates\\header1.dat",
+    "Frame Int Time":3,
+    "Integration Mode":"SUTR",
+    "Integration Time":10,
+    "Offsets":[
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "Sim Folder":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\PRIME Simulation FITS Images"
+  },
+  "Detector Config PRIME":{
+    "Detector Computer":{
+      "FITS File Path":"/local/data/fermi-grb1/home/rimas/dev/h2rg/fitdat",
+      "Header Path":"/local/data/fermi-grb1/home/rimas/dev/h2rg/header",
+      "Machine":"localhost",
+      "Name":"PRIME",
+      "Password":"R!MAS1grb",
+      "Port":20750
+    },
+    "Detector":0,
+    "FITS Data File Path":"F:\\PRIME FITS Files",
+    "FITS Detector Settings":{
+      "# of Frames":1,
+      "# of Groups":1,
+      "Exp Time Long":2,
+      "Exp Time Short":1,
+      "Image Type":"",
+      "Object Name":"Auto",
+      "Object":"",
+      "Obs Type":"",
+      "Observer Affiliation":"",
+      "Observer":""
+    },
+    "FITS hdr template0":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\FITS Templates\\header0.json",
+    "FITS hdr template1":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\FITS Templates\\header1.json",
+    "Frame Int Time":3,
+    "Integration Mode":"CDS",
+    "Integration Time":3,
+    "Offsets":[
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "Sim Folder":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\PRIME Simulation FITS Images"
+  },
+  "Detector Config Simulation":{
+    "Detector Computer":{
+      "FITS File Path":"/local/data/fermi-grb1/home/rimas/dev/h2rg/fitdat",
+      "Header Path":"/local/data/fermi-grb1/home/rimas/dev/h2rg/header",
+      "Machine":"192.168.121.11",
+      "Name":"Simulation",
+      "Password":"R!MAS1grb",
+      "Port":44444
+    },
+    "Detector":0,
+    "FITS Data File Path":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\PRIME FITS Images",
+    "FITS Detector Settings":{
+      "# of Frames":1,
+      "# of Groups":1,
+      "Exp Time Long":2,
+      "Exp Time Short":1,
+      "Image Type":"",
+      "Object Name":"Normal",
+      "Object":"",
+      "Obs Type":"",
+      "Observer Affiliation":"",
+      "Observer":""
+    },
+    "FITS hdr template0":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\FITS Templates\\header0.dat",
+    "FITS hdr template1":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\FITS Templates\\header1.dat",
+    "Frame Int Time":4,
+    "Integration Mode":"SSR",
+    "Integration Time":4,
+    "Offsets":[
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0],
+      [0]
+    ],
+    "Sim Folder":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\PRIME Simulation FITS Images"
+  },
+  "Detector Config":{
+    "Detector Computer":{
+      "FITS File Path":"/local/data/fermi-grb1/home/rimas/dev/h2rg/fitdat",
+      "Header Path":"/local/data/fermi-grb1/home/rimas/dev/h2rg/header",
+      "Machine":"192.168.121.11",
+      "Name":"",
+      "Password":"R!MAS1grb",
+      "Port":44444
+    },
+    "Detector":0,
+    "FITS Data File Path":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\PRIME FITS Images",
+    "FITS Detector Settings":{
+      "# of Frames":1,
+      "# of Groups":1,
+      "Exp Time Long":2,
+      "Exp Time Short":1,
+      "Image Type":"",
+      "Object Name":"",
+      "Object":"",
+      "Obs Type":"",
+      "Observer Affiliation":"",
+      "Observer":""
+    },
+    "FITS hdr template0":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\FITS Templates\\header0.dat",
+    "FITS hdr template1":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\FITS Templates\\header1.dat",
+    "Offsets 0":[
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "Offsets 1":[
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "Sim Folder":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\PRIME Simulation FITS Images"
+  },
+  "Filter Wheel Settings Default":{
+    "Addr":"COM7",
+    "Default Speed":200,
+    "Filters":[
+      {
+        "Names":["J","Y","H","Open"],
+        "Relative Position":[0,0,0,0],
+        "Wheel Name":"Outer Wheel"
+      },
+      {
+        "Names":["Z","Open","Dark","NB"],
+        "Relative Position":[0,0,0,0],
+        "Wheel Name":"Inner Wheel"
+      }
+    ],
+    "Homing Parameters":{
+      "Accel":1000,
+      "Direction (F: CW)":true,
+      "Min Distance":5600,
+      "Short Leg":1900,
+      "Speed":200
+    },
+    "Invalid Combinations":[[]],
+    "Name":"Default",
+    "Num Wheels":2,
+    "Simulate":false
+  },
+  "Filter Wheel Settings Simulation":{
+    "Addr":"",
+    "Filters":[
+      {
+        "Names":["Y","J","H","Open"],
+        "Relative Position":[1,2,3,4],
+        "Wheel Name":"YJH"
+      },
+      {
+        "Names":["Z","Narrow","Dark","Open"],
+        "Relative Position":[1,2,3,4],
+        "Wheel Name":"NarrowBand"
+      }
+    ],
+    "Homing Parameters":{
+      "Accel":400,
+      "Direction (F: CW)":true,
+      "Min Distance":5600,
+      "Short Leg":1900,
+      "Speed":150
+    },
+    "Invalid Combinations":[[]],
+    "Name":"Simulation",
+    "Num Wheels":2,
+    "Simulate":true
+  },
+  "Focus Settings Default":{
+    "Last Positions":[],
+    "Motion Settings":{"Steps Per Sec 2":0,"Steps Per Sec":0},
+    "Type":"Simulated"
+  },
+  "Hardware Settings":{
+    "Installed Hardware":[
+      {
+        "All Instances":["Simulation","NewFocus"],
+        "Curr Device Name":"Simulation",
+        "Device Type Name":"Focus"
+      },
+      {
+        "All Instances":["Simulation","PRIME","Default"],
+        "Curr Device Name":"Default",
+        "Device Type Name":"filter wheel"
+      },
+      {
+        "All Instances":["Simulation","PRIME"],
+        "Curr Device Name":"Simulation",
+        "Device Type Name":"telescope"
+      },
+      {
+        "All Instances":["Simulation","PRIME"],
+        "Curr Device Name":"PRIME",
+        "Device Type Name":"cryoserver"
+      },
+      {
+        "All Instances":["Simulation","PRIME"],
+        "Curr Device Name":"PRIME",
+        "Device Type Name":"detector"
+      },
+      {
+        "All Instances":["Simulation","PRIME"],
+        "Curr Device Name":"PRIME",
+        "Device Type Name":"cryocooler"
+      },
+      {
+        "All Instances":["Simulation","PRIME"],
+        "Curr Device Name":"PRIME",
+        "Device Type Name":"pressure monitor"
+      }
+    ]
+  },
+  "Homing Parameters":{
+    "Accel":1000,
+    "Direction (F: CW)":true,
+    "Min Distance":5600,
+    "Short Leg":1900,
+    "Speed":200
+  },
+  "PRIME Detector Settings":{
+    "Python Server":"C:\\Users\\gsfcprime\\PycharmProjects\\asdetector"
+  },
+  "Pressur Monitor Settings":{
+    "Enabled?":[true,false],
+    "Filaments":[true,true],
+    "Lesker Addrs":["COM4","COM3"],
+    "Pressure Alarm Level":1.00000000000000E-5
+  },
+  "System Settings":{
+    "HK Table Name":"HK Table",
+    "Images Folder":"F:\\PRIME FITS Files",
+    "Obs File":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\Observation List\\obs 2.csv"
+  }
+}
