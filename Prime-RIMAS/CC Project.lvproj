@@ -568,9 +568,8 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Telescope Restore</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/CC Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E020C481-F141-409F-A2EB-CD4DBA1C1A3C}</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">3</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Telescope Restore Settings.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Telescope Restore/Telescope Restore Settings.exe</Property>
@@ -579,7 +578,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Telescope Restore/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{82DA1A16-CEBA-49DE-9099-C665D35397A2}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{E6184C62-8887-4AC6-AD90-BF9AAB018439}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Configuration/CC Restore Previous Setup.vi</Property>

@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 197
+Add User Friendly Error Text.vi
+lib 699 Mission Telem Filename.vi
+lib cluster 699 Config.ctl
+lib Read 699 Config File.vi
+lib Read Only 699 Config File.vi
+Read Config Item.llb
+Write Config Item.llb
+
+END

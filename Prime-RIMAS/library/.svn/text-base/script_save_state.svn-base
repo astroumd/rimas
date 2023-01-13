@@ -1,0 +1,213 @@
+<?xml version='1.0' standalone='yes' ?><LVData xmlns="http://www.ni.com/LVData"><Version>11.0</Version><Cluster><Name>save state</Name><NumElts>3</NumElts><Array><Name>groups</Name><Dimsize>6</Dimsize><Cluster><Name></Name><NumElts>5</NumElts><String><Name>Name</Name><Val>CS1_GUN:</Val></String><String><Name>Source</Name><Val>ladlib</Val></String><Array><Name>ch</Name><Dimsize>7</Dimsize><I32><Name>ch</Name><Val>24</Val></I32><I32><Name>ch</Name><Val>90</Val></I32><I32><Name>ch</Name><Val>91</Val></I32><I32><Name>ch</Name><Val>92</Val></I32><I32><Name>ch</Name><Val>93</Val></I32><I32><Name>ch</Name><Val>52</Val></I32><I32><Name>ch</Name><Val>53</Val></I32></Array><Array><Name>dac</Name><Dimsize>7</Dimsize><I32><Name>ch</Name><Val>184</Val></I32><I32><Name>ch</Name><Val>2861</Val></I32><I32><Name>ch</Name><Val>2781</Val></I32><I32><Name>ch</Name><Val>2777</Val></I32><I32><Name>ch</Name><Val>2780</Val></I32><I32><Name>ch</Name><Val>85</Val></I32><I32><Name>ch</Name><Val>85</Val></I32></Array><Array><Name>name</Name><Dimsize>7</Dimsize><String><Name>Name</Name><Val>CS_FS1_VCTL</Val></String><String><Name>Name</Name><Val>CS_EF1A_VCTL</Val></String><String><Name>Name</Name><Val>CS_EF1B_VCTL</Val></String><String><Name>Name</Name><Val>CS_EF1C_VCTL</Val></String><String><Name>Name</Name><Val>CS_EF1D_VCTL</Val></String><String><Name>Name</Name><Val>CS_EA1_VCTL</Val></String><String><Name>Name</Name><Val>CS_AN1_VCTL</Val></String></Array></Cluster><Cluster><Name></Name><NumElts>5</NumElts><String><Name>Name</Name><Val>CS2_GUN:</Val></String><String><Name>Source</Name><Val>ladlib</Val></String><Array><Name>ch</Name><Dimsize>7</Dimsize><I32><Name>ch</Name><Val>27</Val></I32><I32><Name>ch</Name><Val>94</Val></I32><I32><Name>ch</Name><Val>95</Val></I32><I32><Name>ch</Name><Val>96</Val></I32><I32><Name>ch</Name><Val>97</Val></I32><I32><Name>ch</Name><Val>54</Val></I32><I32><Name>ch</Name><Val>55</Val></I32></Array><Array><Name>dac</Name><Dimsize>7</Dimsize><I32><Name>ch</Name><Val>184</Val></I32><I32><Name>ch</Name><Val>2781</Val></I32><I32><Name>ch</Name><Val>2781</Val></I32><I32><Name>ch</Name><Val>2778</Val></I32><I32><Name>ch</Name><Val>2780</Val></I32><I32><Name>ch</Name><Val>85</Val></I32><I32><Name>ch</Name><Val>85</Val></I32></Array><Array><Name>name</Name><Dimsize>7</Dimsize><String><Name>Name</Name><Val>CS_FS2_VCTL</Val></String><String><Name>Name</Name><Val>CS_EF2A_VCTL</Val></String><String><Name>Name</Name><Val>CS_EF2B_VCTL</Val></String><String><Name>Name</Name><Val>CS_EF2C_VCTL</Val></String><String><Name>Name</Name><Val>CS_EF2D_VCTL</Val></String><String><Name>Name</Name><Val>CS_EA2_VCTL</Val></String><String><Name>Name</Name><Val>CS_AN2_VCTL</Val></String></Array></Cluster><Cluster><Name></Name><NumElts>5</NumElts><String><Name>Name</Name><Val>CS_FOCUS:</Val></String><String><Name>Source</Name><Val>ladlib</Val></String><Array><Name>ch</Name><Dimsize>3</Dimsize><I32><Name>ch</Name><Val>70</Val></I32><I32><Name>ch</Name><Val>101</Val></I32><I32><Name>ch</Name><Val>102</Val></I32></Array><Array><Name>dac</Name><Dimsize>3</Dimsize><I32><Name>ch</Name><Val>6</Val></I32><I32><Name>ch</Name><Val>269</Val></I32><I32><Name>ch</Name><Val>746</Val></I32></Array><Array><Name>name</Name><Dimsize>3</Dimsize><String><Name>Name</Name><Val>CS_IA_VCTL</Val></String><String><Name>Name</Name><Val>CS_IFA_VCTL</Val></String><String><Name>Name</Name><Val>CS_IFB_VCTL</Val></String></Array></Cluster><Cluster><Name></Name><NumElts>5</NumElts><String><Name>Name</Name><Val>SWITCHING</Val></String><String><Name>Source</Name><Val>ladlib</Val></String><Array><Name>ch</Name><Dimsize>8</Dimsize><I32><Name>ch</Name><Val>108</Val></I32><I32><Name>ch</Name><Val>103</Val></I32><I32><Name>ch</Name><Val>104</Val></I32><I32><Name>ch</Name><Val>105</Val></I32><I32><Name>ch</Name><Val>106</Val></I32><I32><Name>ch</Name><Val>110</Val></I32><I32><Name>ch</Name><Val>49</Val></I32><I32><Name>ch</Name><Val>76</Val></I32></Array><Array><Name>dac</Name><Dimsize>8</Dimsize><I32><Name>ch</Name><Val>603</Val></I32><I32><Name>ch</Name><Val>135</Val></I32><I32><Name>ch</Name><Val>818</Val></I32><I32><Name>ch</Name><Val>181</Val></I32><I32><Name>ch</Name><Val>11</Val></I32><I32><Name>ch</Name><Val>226</Val></I32><I32><Name>ch</Name><Val>162</Val></I32><I32><Name>ch</Name><Val>651</Val></I32></Array><Array><Name>name</Name><Dimsize>8</Dimsize><String><Name>Name</Name><Val>SL_TF_VCTL</Val></String><String><Name>Name</Name><Val>SL_TB_VCTL</Val></String><String><Name>Name</Name><Val>SL_BB_VCTL</Val></String><String><Name>Name</Name><Val>SL_BF_VCTL</Val></String><String><Name>Name</Name><Val>SL_EL_VCTL</Val></String><String><Name>Name</Name><Val>OS_OL6_VCTL</Val></String><String><Name>Name</Name><Val>CS_NZ_VCTL</Val></String><String><Name>Name</Name><Val>IA_L1_VCTL</Val></String></Array></Cluster><Cluster><Name></Name><NumElts>5</NumElts><String><Name>Name</Name><Val>ION</Val></String><String><Name>Source</Name><Val>ladlib</Val></String><Array><Name>ch</Name><Dimsize>6</Dimsize><I32><Name>ch</Name><Val>77</Val></I32><I32><Name>ch</Name><Val>78</Val></I32><I32><Name>ch</Name><Val>79</Val></I32><I32><Name>ch</Name><Val>80</Val></I32><I32><Name>ch</Name><Val>81</Val></I32><I32><Name>ch</Name><Val>56</Val></I32></Array><Array><Name>dac</Name><Dimsize>6</Dimsize><I32><Name>ch</Name><Val>505</Val></I32><I32><Name>ch</Name><Val>1318</Val></I32><I32><Name>ch</Name><Val>1318</Val></I32><I32><Name>ch</Name><Val>414</Val></I32><I32><Name>ch</Name><Val>3112</Val></I32><I32><Name>ch</Name><Val>8</Val></I32></Array><Array><Name>name</Name><Dimsize>6</Dimsize><String><Name>Name</Name><Val>IA_L2_VCTL</Val></String><String><Name>Name</Name><Val>IA_L4A_VCTL</Val></String><String><Name>Name</Name><Val>IA_L4B_VCTL</Val></String><String><Name>Name</Name><Val>IA_L5_VCTL</Val></String><String><Name>Name</Name><Val>IA_L6_VCTL</Val></String><String><Name>Name</Name><Val>QD_BS_VCTL</Val></String></Array></Cluster><Cluster><Name></Name><NumElts>5</NumElts><String><Name>Name</Name><Val>nominal</Val></String><String><Name>Source</Name><Val>scimain</Val></String><Array><Name>ch</Name><Dimsize>24</Dimsize><I32><Name>ch</Name><Val>47</Val></I32><I32><Name>ch</Name><Val>32</Val></I32><I32><Name>ch</Name><Val>21</Val></I32><I32><Name>ch</Name><Val>64</Val></I32><I32><Name>ch</Name><Val>18</Val></I32><I32><Name>ch</Name><Val>82</Val></I32><I32><Name>ch</Name><Val>83</Val></I32><I32><Name>ch</Name><Val>84</Val></I32><I32><Name>ch</Name><Val>85</Val></I32><I32><Name>ch</Name><Val>68</Val></I32><I32><Name>ch</Name><Val>63</Val></I32><I32><Name>ch</Name><Val>65</Val></I32><I32><Name>ch</Name><Val>67</Val></I32><I32><Name>ch</Name><Val>107</Val></I32><I32><Name>ch</Name><Val>100</Val></I32><I32><Name>ch</Name><Val>109</Val></I32><I32><Name>ch</Name><Val>108</Val></I32><I32><Name>ch</Name><Val>103</Val></I32><I32><Name>ch</Name><Val>104</Val></I32><I32><Name>ch</Name><Val>105</Val></I32><I32><Name>ch</Name><Val>106</Val></I32><I32><Name>ch</Name><Val>110</Val></I32><I32><Name>ch</Name><Val>49</Val></I32><I32><Name>ch</Name><Val>76</Val></I32></Array><Array><Name>dac</Name><Dimsize>24</Dimsize><I32><Name>ch</Name><Val>12</Val></I32><I32><Name>ch</Name><Val>0</Val></I32><I32><Name>ch</Name><Val>0</Val></I32><I32><Name>ch</Name><Val>0</Val></I32><I32><Name>ch</Name><Val>189</Val></I32><I32><Name>ch</Name><Val>2534</Val></I32><I32><Name>ch</Name><Val>2771</Val></I32><I32><Name>ch</Name><Val>2858</Val></I32><I32><Name>ch</Name><Val>2857</Val></I32><I32><Name>ch</Name><Val>17</Val></I32><I32><Name>ch</Name><Val>0</Val></I32><I32><Name>ch</Name><Val>0</Val></I32><I32><Name>ch</Name><Val>13</Val></I32><I32><Name>ch</Name><Val>175</Val></I32><I32><Name>ch</Name><Val>604</Val></I32><I32><Name>ch</Name><Val>666</Val></I32><I32><Name>ch</Name><Val>122</Val></I32><I32><Name>ch</Name><Val>425</Val></I32><I32><Name>ch</Name><Val>124</Val></I32><I32><Name>ch</Name><Val>424</Val></I32><I32><Name>ch</Name><Val>112</Val></I32><I32><Name>ch</Name><Val>226</Val></I32><I32><Name>ch</Name><Val>85</Val></I32><I32><Name>ch</Name><Val>456</Val></I32></Array><Array><Name>name</Name><Dimsize>24</Dimsize><String><Name>Name</Name><Val>FIL_SEL</Val></String><String><Name>Name</Name><Val>FIL_ON_CTRL</Val></String><String><Name>Name</Name><Val>OS_FS2_VCTL</Val></String><String><Name>Name</Name><Val>OS_EA2_VCTL</Val></String><String><Name>Name</Name><Val>OS_FS1_VCTL</Val></String><String><Name>Name</Name><Val>OS_EF1A_VCTL</Val></String><String><Name>Name</Name><Val>OS_EF1B_VCTL</Val></String><String><Name>Name</Name><Val>OS_EF1C_VCTL</Val></String><String><Name>Name</Name><Val>OS_EF1D_VCTL</Val></String><String><Name>Name</Name><Val>OS_COLA_VCTL</Val></String><String><Name>Name</Name><Val>OS_RES1_VCTL</Val></String><String><Name>Name</Name><Val>OS_RES2_VCTL</Val></String><String><Name>Name</Name><Val>OS_OL2_VCTL</Val></String><String><Name>Name</Name><Val>OS_OL3_VCTL</Val></String><String><Name>Name</Name><Val>OS_OL4_VCTL</Val></String><String><Name>Name</Name><Val>OS_OL5_VCTL</Val></String><String><Name>Name</Name><Val>SL_TF_VCTL</Val></String><String><Name>Name</Name><Val>SL_TB_VCTL</Val></String><String><Name>Name</Name><Val>SL_BB_VCTL</Val></String><String><Name>Name</Name><Val>SL_BF_VCTL</Val></String><String><Name>Name</Name><Val>SL_EL_VCTL</Val></String><String><Name>Name</Name><Val>OS_OL6_VCTL</Val></String><String><Name>Name</Name><Val>CS_NZ_VCTL</Val></String><String><Name>Name</Name><Val>IA_L1_VCTL</Val></String></Array></Cluster></Array><String><Name>sci main data</Name><Val>CS1_GUN: 7
+setctrl CS_FS1_VCTL(24)=184 (0xb8)
+setctrl CS_EF1A_VCTL(90)=2861 (0xb2d)
+setctrl CS_EF1B_VCTL(91)=2781 (0xadd)
+setctrl CS_EF1C_VCTL(92)=2777 (0xad9)
+setctrl CS_EF1D_VCTL(93)=2780 (0xadc)
+setctrl CS_EA1_VCTL(52)=85 (0x55)
+setctrl CS_AN1_VCTL(53)=85 (0x55)
+CS2_GUN: 7
+setctrl CS_FS2_VCTL(27)=184 (0xb8)
+setctrl CS_EF2A_VCTL(94)=2781 (0xadd)
+setctrl CS_EF2B_VCTL(95)=2781 (0xadd)
+setctrl CS_EF2C_VCTL(96)=2778 (0xada)
+setctrl CS_EF2D_VCTL(97)=2780 (0xadc)
+setctrl CS_EA2_VCTL(54)=85 (0x55)
+setctrl CS_AN2_VCTL(55)=85 (0x55)
+CS_FOCUS: 5
+setctrl CS_RP_VCTL(71)=-13 (0xfffffff3)
+setctrl CS_RS_VCTL(72)=-13 (0xfffffff3)
+setctrl CS_IA_VCTL(70)=6 (0x6)
+setctrl CS_IFA_VCTL(101)=269 (0x10d)
+setctrl CS_IFB_VCTL(102)=746 (0x2ea)
+END qms.set_cs_gun
+qms.set_focusing(mode=4)
+SWITCHING LENSES
+setctrl SL_TF_VCTL(108)=603 (0x25b)
+setctrl SL_TB_VCTL(103)=135 (0x87)
+setctrl SL_BB_VCTL(104)=818 (0x332)
+setctrl SL_BF_VCTL(105)=181 (0xb5)
+setctrl SL_EL_VCTL(106)=11 (0xb)
+setctrl OS_OL6_VCTL(110)=226 (0xe2)
+setctrl CS_NZ_VCTL(49)=162 (0xa2)
+setctrl IA_L1_VCTL(76)=651 (0x28b)
+ION Focus
+setctrl IA_L2_VCTL(77)=505 (0x1f9)
+setctrl IA_L4A_VCTL(78)=1318 (0x526)
+setctrl IA_L4B_VCTL(79)=1318 (0x526)
+setctrl IA_L5_VCTL(80)=414 (0x19e)
+setctrl IA_L6_VCTL(81)=3112 (0xc28)
+setctrl QD_BS_VCTL(56)=8 (0x8)
+DET Lenses
+setctrl MT_EZ_VCTL(57)=-6 (0xfffffffa)
+setctrl MT_MA1_VCTL(58)=115 (0x73)
+setctrl MT_MA2_VCTL(59)=115 (0x73)
+setctrl MT_WD_VCTL(60)=102 (0x66)
+setctrl MT_FC_VCTL(61)=0 (0x0)
+qms.set_focusing() done
+
+
+OSNT Fil 1
+qms.set_nominal_tuning(fil_cs=0, fil_os=1, mode=1)
+setdac FIL_SEL(47)=12 (0xc)
+setdac FIL_ON_CTRL(32)=0 (0x0)
+setdac OS_FS2_VCTL(21)=0 (0x0)
+setdac OS_EF2A_VCTL(86)=-2 (0xfffffffe)
+setdac OS_EF2B_VCTL(87)=-3 (0xfffffffd)
+setdac OS_EF2C_VCTL(88)=-5 (0xfffffffb)
+setdac OS_EF2D_VCTL(89)=-3 (0xfffffffd)
+setdac OS_EA2_VCTL(64)=0 (0x0)
+
+setctrl OS_FS1_VCTL(18)=189 (0xbd)
+setctrl OS_EF1A_VCTL(82)=2534 (0x9e6)
+setctrl OS_EF1B_VCTL(83)=2771 (0xad3)
+setctrl OS_EF1C_VCTL(84)=2858 (0xb2a)
+setctrl OS_EF1D_VCTL(85)=2857 (0xb29)
+setctrl OS_EA1_VCTL(62)=-29 (0xffffffe3)
+
+setctrl OS_COLA_VCTL(68)=17 (0x11)
+setctrl OS_COLB_VCTL(69)=-17 (0xffffffef)
+setctrl OS_RES1_VCTL(63)=0 (0x0)
+setctrl OS_RES2_VCTL(65)=0 (0x0)
+setctrl OS_OL1_VCTL(66)=-13 (0xfffffff3)
+setctrl OS_OL2_VCTL(67)=13 (0xd)
+setctrl OS_OL3_VCTL(107)=175 (0xaf)
+setctrl OS_OL4_VCTL(100)=604 (0x25c)
+setctrl OS_OL5_VCTL(109)=666 (0x29a)
+qms.set_focusing(mode=1)
+Switching Lenses
+setctrl SL_TF_VCTL(108)=122 (0x7a)
+setctrl SL_TB_VCTL(103)=425 (0x1a9)
+setctrl SL_BB_VCTL(104)=124 (0x7c)
+setctrl SL_BF_VCTL(105)=424 (0x1a8)
+setctrl SL_EL_VCTL(106)=112 (0x70)
+setctrl OS_OL6_VCTL(110)=226 (0xe2)
+setctrl CS_NZ_VCTL(49)=85 (0x55)
+setctrl IA_L1_VCTL(76)=456 (0x1c8)
+ION Focus
+setctrl IA_L2_VCTL(77)=239 (0xef)
+setctrl IA_L4A_VCTL(78)=1362 (0x552)
+setctrl IA_L4B_VCTL(79)=1363 (0x553)
+setctrl IA_L5_VCTL(80)=428 (0x1ac)
+setctrl IA_L6_VCTL(81)=2953 (0xb89)
+setctrl QD_BS_VCTL(56)=8 (0x8)
+DET Lenses
+setctrl MT_EZ_VCTL(57)=-6 (0xfffffffa)
+setctrl MT_MA1_VCTL(58)=115 (0x73)
+setctrl MT_MA2_VCTL(59)=115 (0x73)
+setctrl MT_WD_VCTL(60)=102 (0x66)
+setctrl MT_FC_VCTL(61)=0 (0x0)
+qms.set_focusing() done
+OSNT Fil 2
+qms.set_nominal_tuning(fil_cs=0, fil_os=2, mode=1)
+setdac FIL_SEL(47)=12 (0xc)
+setdac FIL_ON_CTRL(32)=0 (0x0)
+setdac OS_FS1_VCTL(18)=0 (0x0)
+setdac OS_EF1A_VCTL(82)=-3 (0xfffffffd)
+</Val></String><String><Name>baseline/ladlib data</Name><Val>CS1_GUN: 7
+setctrl CS_FS1_VCTL(24)=184 (0xb8)
+setctrl CS_EF1A_VCTL(90)=2861 (0xb2d)
+setctrl CS_EF1B_VCTL(91)=2781 (0xadd)
+setctrl CS_EF1C_VCTL(92)=2777 (0xad9)
+setctrl CS_EF1D_VCTL(93)=2780 (0xadc)
+setctrl CS_EA1_VCTL(52)=85 (0x55)
+setctrl CS_AN1_VCTL(53)=85 (0x55)
+CS2_GUN: 7
+setctrl CS_FS2_VCTL(27)=184 (0xb8)
+setctrl CS_EF2A_VCTL(94)=2781 (0xadd)
+setctrl CS_EF2B_VCTL(95)=2781 (0xadd)
+setctrl CS_EF2C_VCTL(96)=2778 (0xada)
+setctrl CS_EF2D_VCTL(97)=2780 (0xadc)
+setctrl CS_EA2_VCTL(54)=85 (0x55)
+setctrl CS_AN2_VCTL(55)=85 (0x55)
+CS_FOCUS: 5
+setctrl CS_RP_VCTL(71)=-13 (0xfffffff3)
+setctrl CS_RS_VCTL(72)=-13 (0xfffffff3)
+setctrl CS_IA_VCTL(70)=6 (0x6)
+setctrl CS_IFA_VCTL(101)=269 (0x10d)
+setctrl CS_IFB_VCTL(102)=746 (0x2ea)
+END qms.set_cs_gun
+qms.set_focusing(mode=4)
+SWITCHING LENSES
+setctrl SL_TF_VCTL(108)=603 (0x25b)
+setctrl SL_TB_VCTL(103)=135 (0x87)
+setctrl SL_BB_VCTL(104)=818 (0x332)
+setctrl SL_BF_VCTL(105)=181 (0xb5)
+setctrl SL_EL_VCTL(106)=11 (0xb)
+setctrl OS_OL6_VCTL(110)=226 (0xe2)
+setctrl CS_NZ_VCTL(49)=162 (0xa2)
+setctrl IA_L1_VCTL(76)=651 (0x28b)
+ION Focus
+setctrl IA_L2_VCTL(77)=505 (0x1f9)
+setctrl IA_L4A_VCTL(78)=1318 (0x526)
+setctrl IA_L4B_VCTL(79)=1318 (0x526)
+setctrl IA_L5_VCTL(80)=414 (0x19e)
+setctrl IA_L6_VCTL(81)=3112 (0xc28)
+setctrl QD_BS_VCTL(56)=8 (0x8)
+DET Lenses
+setctrl MT_EZ_VCTL(57)=-6 (0xfffffffa)
+setctrl MT_MA1_VCTL(58)=115 (0x73)
+setctrl MT_MA2_VCTL(59)=115 (0x73)
+setctrl MT_WD_VCTL(60)=102 (0x66)
+setctrl MT_FC_VCTL(61)=0 (0x0)
+qms.set_focusing() done
+
+
+OSNT Fil 1
+qms.set_nominal_tuning(fil_cs=0, fil_os=1, mode=1)
+setdac FIL_SEL(47)=12 (0xc)
+setdac FIL_ON_CTRL(32)=0 (0x0)
+setdac OS_FS2_VCTL(21)=0 (0x0)
+setdac OS_EF2A_VCTL(86)=-2 (0xfffffffe)
+setdac OS_EF2B_VCTL(87)=-3 (0xfffffffd)
+setdac OS_EF2C_VCTL(88)=-5 (0xfffffffb)
+setdac OS_EF2D_VCTL(89)=-3 (0xfffffffd)
+setdac OS_EA2_VCTL(64)=0 (0x0)
+
+setctrl OS_FS1_VCTL(18)=189 (0xbd)
+setctrl OS_EF1A_VCTL(82)=2534 (0x9e6)
+setctrl OS_EF1B_VCTL(83)=2771 (0xad3)
+setctrl OS_EF1C_VCTL(84)=2858 (0xb2a)
+setctrl OS_EF1D_VCTL(85)=2857 (0xb29)
+setctrl OS_EA1_VCTL(62)=-29 (0xffffffe3)
+
+setctrl OS_COLA_VCTL(68)=17 (0x11)
+setctrl OS_COLB_VCTL(69)=-17 (0xffffffef)
+setctrl OS_RES1_VCTL(63)=0 (0x0)
+setctrl OS_RES2_VCTL(65)=0 (0x0)
+setctrl OS_OL1_VCTL(66)=-13 (0xfffffff3)
+setctrl OS_OL2_VCTL(67)=13 (0xd)
+setctrl OS_OL3_VCTL(107)=175 (0xaf)
+setctrl OS_OL4_VCTL(100)=604 (0x25c)
+setctrl OS_OL5_VCTL(109)=666 (0x29a)
+qms.set_focusing(mode=1)
+Switching Lenses
+setctrl SL_TF_VCTL(108)=122 (0x7a)
+setctrl SL_TB_VCTL(103)=425 (0x1a9)
+setctrl SL_BB_VCTL(104)=124 (0x7c)
+setctrl SL_BF_VCTL(105)=424 (0x1a8)
+setctrl SL_EL_VCTL(106)=112 (0x70)
+setctrl OS_OL6_VCTL(110)=226 (0xe2)
+setctrl CS_NZ_VCTL(49)=85 (0x55)
+setctrl IA_L1_VCTL(76)=456 (0x1c8)
+ION Focus
+setctrl IA_L2_VCTL(77)=239 (0xef)
+setctrl IA_L4A_VCTL(78)=1362 (0x552)
+setctrl IA_L4B_VCTL(79)=1363 (0x553)
+setctrl IA_L5_VCTL(80)=428 (0x1ac)
+setctrl IA_L6_VCTL(81)=2953 (0xb89)
+setctrl QD_BS_VCTL(56)=8 (0x8)
+DET Lenses
+setctrl MT_EZ_VCTL(57)=-6 (0xfffffffa)
+setctrl MT_MA1_VCTL(58)=115 (0x73)
+setctrl MT_MA2_VCTL(59)=115 (0x73)
+setctrl MT_WD_VCTL(60)=102 (0x66)
+setctrl MT_FC_VCTL(61)=0 (0x0)
+qms.set_focusing() done
+OSNT Fil 2
+qms.set_nominal_tuning(fil_cs=0, fil_os=2, mode=1)
+setdac FIL_SEL(47)=12 (0xc)
+setdac FIL_ON_CTRL(32)=0 (0x0)
+setdac OS_FS1_VCTL(18)=0 (0x0)
+setdac OS_EF1A_VCTL(82)=-3 (0xfffffffd)
+</Val></String></Cluster></LVData>

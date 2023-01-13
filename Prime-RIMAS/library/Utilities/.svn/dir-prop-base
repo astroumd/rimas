@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 192
+Convert Project Filenames.vi
+lib bool to enable disable.vi
+lib Compare Files in Folder.vi
+lib Create Folder If Necessary.vi
+lib create TID folder.vi
+lib Fix End-of-Line.vi
+lib Run Opendiff.vi
+
+END
