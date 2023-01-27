@@ -1,0 +1,40 @@
+Hello, Alexander
+
+With access to the ActiveMQ web page, you can try sending, for example, offsets to the TCS,
+and you can look at the response using the appropriate topic. For example, to test sending a
+SIMPLE offset (RA, Dec), you can do this:
+
+-- Click on Topics
+-- Select TCS.TCSSharedVariables.TCSSubData.TCSTcsCommandSV
+-- Paste into Message Body this XML code:
+
+<scienceTargetOffset>
+  <commandID>750237349</commandID>
+  <tcsErrorResponse>
+    <code>0</code>
+    <source></source>
+    <status>false</status>
+  </tcsErrorResponse>
+  <offsetDef>
+    <num1>Handset</num1>
+    <off1>10.0</off1>
+    <off2>30.0</off2>
+    <offsetType>SIMPLE</offsetType>
+  </offsetDef>
+</scienceTargetOffset>
+
+Please note that the commandID number must be different for for every command.
+Commands with the same ID will be ignored.
+
+You can look at the results using the following topics:
+
+TCS.TCSSharedVariables.TCSHighLevelStatusSV.TCSTcsStatusSV
+TCS.TCSSharedVariables.TCSLowLevelStatusSV.TCSTcsCommandResponseSV
+
+which give you information about possible errors, what the offsets were, etc.
+
+Eventually, of course, this should be done by your software, which should send
+the appropriate XML packets to the ActiveMQ broker, which will then send them
+to the MCB and the TCS.
+
+Georgi

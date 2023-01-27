@@ -26,6 +26,9 @@
 		<Item Name="Detector" Type="Folder" URL="../Detector">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Documents" Type="Folder" URL="../../Documents">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Filter Wheel" Type="Folder" URL="../Filter Wheel">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -36,21 +39,14 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="hk-channel-class" Type="Folder">
-			<Item Name="hk-channel-class" Type="Folder">
-				<Item Name="HK Alarms" Type="Folder">
-					<Item Name="HK Alarms.lvclass" Type="LVClass" URL="../../hk-channel-class/hk-channel-class/HK Alarms/HK Alarms.lvclass"/>
-				</Item>
-				<Item Name="HK Creator" Type="Folder">
-					<Item Name="HK Channel Setup and Test.vi" Type="VI" URL="../../hk-channel-class/hk-channel-class/HK Creator/HK Channel Setup and Test.vi"/>
-					<Item Name="HK cluster Create Defaults.ctl" Type="VI" URL="../../hk-channel-class/hk-channel-class/HK Creator/HK cluster Create Defaults.ctl"/>
-					<Item Name="Rd Wr HK Creator Defaults.vi" Type="VI" URL="../../hk-channel-class/hk-channel-class/HK Creator/Rd Wr HK Creator Defaults.vi"/>
-				</Item>
-				<Item Name="HK Item" Type="Folder">
-					<Item Name="HK Item.lvclass" Type="LVClass" URL="../../hk-channel-class/hk-channel-class/HK Item/HK Item.lvclass"/>
-				</Item>
-				<Item Name="HK Table" Type="Folder">
-					<Item Name="HK Table.lvclass" Type="LVClass" URL="../../hk-channel-class/hk-channel-class/HK Table/HK Table.lvclass"/>
-				</Item>
+			<Item Name="HK Alarms" Type="Folder">
+				<Item Name="HK Alarms.lvclass" Type="LVClass" URL="../../hk-channel-class/hk-channel-class/HK Alarms/HK Alarms.lvclass"/>
+			</Item>
+			<Item Name="HK Item" Type="Folder">
+				<Item Name="HK Item.lvclass" Type="LVClass" URL="../../hk-channel-class/hk-channel-class/HK Item/HK Item.lvclass"/>
+			</Item>
+			<Item Name="HK Table" Type="Folder">
+				<Item Name="HK Table.lvclass" Type="LVClass" URL="../../hk-channel-class/hk-channel-class/HK Table/HK Table.lvclass"/>
 			</Item>
 		</Item>
 		<Item Name="Image Viewer" Type="Folder" URL="../Image Viewer">
@@ -104,7 +100,6 @@
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
 				<Item Name="Close Registry Key.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Close Registry Key.vi"/>
-				<Item Name="Command Line String To Path.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Command Line String To Path.vi"/>
 				<Item Name="compatCalcOffset.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatCalcOffset.vi"/>
 				<Item Name="compatFileDialog.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatFileDialog.vi"/>
 				<Item Name="compatOpenFileOperation.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatOpenFileOperation.vi"/>
@@ -243,7 +238,6 @@
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="Trim Whitespace One-Sided.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace One-Sided.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
-				<Item Name="UNIXPathStringToPath.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/CFURL.llb/UNIXPathStringToPath.vi"/>
 				<Item Name="Unset Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Unset Busy.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
@@ -266,7 +260,6 @@
 			<Item Name="Advapi32.dll" Type="Document" URL="Advapi32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="AVC_Serial_Write_and_Read.vi" Type="VI" URL="../../../../VIs/PRIME/PRIME/Cryotel/Cooler_control/AVC_Serial_Write_and_Read.vi"/>
 			<Item Name="CC Alarm Object.vi" Type="VI" URL="../Logging/CC Alarm Object.vi"/>
 			<Item Name="CC Create Script.vi" Type="VI" URL="../CC Create Script.vi"/>
 			<Item Name="CC Data Logging Loop.vi" Type="VI" URL="../Logging/CC Data Logging Loop.vi"/>
@@ -279,23 +272,12 @@
 			<Item Name="CC System Message.vi" Type="VI" URL="../Logging/CC System Message.vi"/>
 			<Item Name="Chronos TDMS Filename from Timestamp.vi" Type="VI" URL="../Logging/Chronos TDMS Filename from Timestamp.vi"/>
 			<Item Name="Chronos TDMS Find Files for Date - Copy.vi" Type="VI" URL="../Logging/Chronos TDMS Find Files for Date - Copy.vi"/>
-			<Item Name="CmdLib.dll" Type="Document" URL="../../../../Code/Apps/Utilities/Picomotor/PicomotorApp/Install/Samples/LabVIEW/Model 8742/LabVIEW 2009/CmdLib.dll"/>
-			<Item Name="date-time-gen.vi" Type="VI" URL="../../../../VIs/PRIME/Logging/date-time-naming/date-time-gen.vi"/>
-			<Item Name="Downsample TID Info cluster.ctl" Type="VI" URL="../DownSample/typedefs/Downsample TID Info cluster.ctl"/>
-			<Item Name="Generate_report.vi" Type="VI" URL="../../../../VIs/PRIME/PRIME/Read_logs/Generate_report.vi"/>
 			<Item Name="HK Table.lvclass" Type="LVClass" URL="../../../hk-channel-class/HK Table/HK Table.lvclass"/>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="lib OSX path to Unix.vi" Type="VI" URL="../library/lib OSX path to Unix.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="Multiline_string_to_array.vi" Type="VI" URL="../user.lib/_Strings/Multiline_string_to_array.vi"/>
-			<Item Name="Phot_subarray.vi" Type="VI" URL="../../../Photometry/Phot_subarray.vi"/>
-			<Item Name="Save FITS.ext1.vi" Type="VI" URL="../../../FITS_RW/Save FITS.ext1.vi"/>
-			<Item Name="Sel_match_from_StringArr.vi" Type="VI" URL="../user.lib/_Strings/Sel_match_from_StringArr.vi"/>
-			<Item Name="Sel_match_from_StringArr.vi" Type="VI" URL="../../../../VIs/PRIME/PRIME/Cryotel/Cooler_control/Sel_match_from_StringArr.vi"/>
 			<Item Name="Serial - Settings.ctl" Type="VI" URL="../Serial - Settings.ctl"/>
-			<Item Name="Serial - Settings.ctl" Type="VI" URL="../../../../VIs/PRIME/PRIME/Cryotel/Cooler_control/Serial - Settings.ctl"/>
 			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
