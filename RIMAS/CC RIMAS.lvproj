@@ -73,6 +73,9 @@
 		<Item Name="Telescope" Type="Folder" URL="../Telescope">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Temp Control" Type="Folder" URL="../Temp Control">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="typedefs" Type="Folder" URL="../typedefs">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -81,6 +84,9 @@
 		</Item>
 		<Item Name="CC Main.vi" Type="VI" URL="../CC Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="instr.lib" Type="Folder">
+				<Item Name="Lake Shore 325.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Lake Shore 325/Lake Shore 325.lvlib"/>
+			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="gfitsio.lvlib" Type="Library" URL="/&lt;userlib&gt;/gfitsio/gfitsio.lvlib"/>
 			</Item>
@@ -230,6 +236,7 @@
 				<Item Name="subDisplayMessage.vi" Type="VI" URL="/&lt;vilib&gt;/express/express output/DisplayMessageBlock.llb/subDisplayMessage.vi"/>
 				<Item Name="subElapsedTime.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/subElapsedTime.vi"/>
 				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
+				<Item Name="subTimeDelay.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/TimeDelayBlock.llb/subTimeDelay.vi"/>
 				<Item Name="System Directory Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/System Directory Type.ctl"/>
 				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
@@ -272,6 +279,9 @@
 			<Item Name="CC System Message.vi" Type="VI" URL="../Logging/CC System Message.vi"/>
 			<Item Name="Chronos TDMS Filename from Timestamp.vi" Type="VI" URL="../Logging/Chronos TDMS Filename from Timestamp.vi"/>
 			<Item Name="Chronos TDMS Find Files for Date - Copy.vi" Type="VI" URL="../Logging/Chronos TDMS Find Files for Date - Copy.vi"/>
+			<Item Name="HK Channel enum Data Type.ctl" Type="VI" URL="../../../hk-channel-class/HK Item/HK Channel enum Data Type.ctl"/>
+			<Item Name="HK Channel Units and Setup.ctl" Type="VI" URL="../../../hk-channel-class/HK Item/HK Channel Units and Setup.ctl"/>
+			<Item Name="HK Item.lvclass" Type="LVClass" URL="../../../hk-channel-class/HK Item/HK Item.lvclass"/>
 			<Item Name="HK Table.lvclass" Type="LVClass" URL="../../../hk-channel-class/HK Table/HK Table.lvclass"/>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
