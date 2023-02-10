@@ -83,9 +83,12 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="CC Main.vi" Type="VI" URL="../CC Main.vi"/>
+		<Item Name="CC Template.vit" Type="VI" URL="../CC Template.vit"/>
+		<Item Name="Rd Wr settings json template.vit" Type="VI" URL="../Rd Wr settings json template.vit"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Lake Shore 325.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Lake Shore 325/Lake Shore 325.lvlib"/>
+				<Item Name="Lake Shore Cryotronics 331.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Lake Shore Cryotronics 331/Lake Shore Cryotronics 331.lvlib"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="gfitsio.lvlib" Type="Library" URL="/&lt;userlib&gt;/gfitsio/gfitsio.lvlib"/>
