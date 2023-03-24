@@ -82,6 +82,7 @@
 		<Item Name="WebRelay10 Driver" Type="Folder" URL="../WebRelay10 Driver">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="ActiveMQBroker.lvclass" Type="LVClass" URL="../TCS/DCT-related/Common/Communication/ActiveMQ/ActiveMQBroker/ActiveMQBroker.lvclass"/>
 		<Item Name="CC Main.vi" Type="VI" URL="../CC Main.vi"/>
 		<Item Name="CC Template.vit" Type="VI" URL="../CC Template.vit"/>
 		<Item Name="Rd Wr settings json template.vit" Type="VI" URL="../Rd Wr settings json template.vit"/>
@@ -95,6 +96,7 @@
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
+				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="Base64 Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/Base64/Base64 Support.lvlib"/>
 				<Item Name="Bit-array To Byte-array.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Bit-array To Byte-array.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -282,6 +284,8 @@
 			<Item Name="CC System Message.vi" Type="VI" URL="../Logging/CC System Message.vi"/>
 			<Item Name="Chronos TDMS Filename from Timestamp.vi" Type="VI" URL="../Logging/Chronos TDMS Filename from Timestamp.vi"/>
 			<Item Name="Chronos TDMS Find Files for Date - Copy.vi" Type="VI" URL="../Logging/Chronos TDMS Find Files for Date - Copy.vi"/>
+			<Item Name="ClockTimes.lvclass" Type="LVClass" URL="../TCS/TCS_external_interfaces/TCSDataDefinitions/TCSPublicStatus/CurrentTimes/ClockTimes/ClockTimes.lvclass"/>
+			<Item Name="Declination.lvclass" Type="LVClass" URL="../TCS/TCS_external_interfaces/TCSDataDefinitions/TCSCommand/TargetConfiguration/Target/FixedTarget/Declination/Declination.lvclass"/>
 			<Item Name="HK Channel enum Data Type.ctl" Type="VI" URL="../../../hk-channel-class/HK Item/HK Channel enum Data Type.ctl"/>
 			<Item Name="HK Channel Units and Setup.ctl" Type="VI" URL="../../../hk-channel-class/HK Item/HK Channel Units and Setup.ctl"/>
 			<Item Name="HK Item.lvclass" Type="LVClass" URL="../../../hk-channel-class/HK Item/HK Item.lvclass"/>
@@ -290,6 +294,8 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="RADecParameters.lvclass" Type="LVClass" URL="../TCS/TCS_external_interfaces/TCSDataDefinitions/TCSCommand/TargetConfiguration/Target/FixedTarget/RADecParameters/RADecParameters.lvclass"/>
+			<Item Name="RADecTarget.lvclass" Type="LVClass" URL="../TCS/TCS_external_interfaces/TCSDataDefinitions/TCSCommand/TargetConfiguration/Target/FixedTarget/RADecTarget/RADecTarget.lvclass"/>
 			<Item Name="Serial - Settings.ctl" Type="VI" URL="../Serial - Settings.ctl"/>
 			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -297,6 +303,15 @@
 			<Item Name="User32.dll" Type="Document" URL="User32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Write declination.vi" Type="VI" URL="../TCS/TCS_external_interfaces/TCSDataDefinitions/TCSCommand/TargetConfiguration/Target/FixedTarget/RADecParameters/Write declination.vi"/>
+			<Item Name="Write degreesDec.vi" Type="VI" URL="../TCS/TCS_external_interfaces/TCSDataDefinitions/TCSCommand/TargetConfiguration/Target/FixedTarget/Declination/Write degreesDec.vi"/>
+			<Item Name="Write hours.vi" Type="VI" URL="../TCS/TCS_external_interfaces/TCSDataDefinitions/TCSPublicStatus/CurrentTimes/ClockTimes/Write hours.vi"/>
+			<Item Name="Write minutesArc.vi" Type="VI" URL="../TCS/TCS_external_interfaces/TCSDataDefinitions/TCSCommand/TargetConfiguration/Target/FixedTarget/Declination/Write minutesArc.vi"/>
+			<Item Name="Write minutesTime.vi" Type="VI" URL="../TCS/TCS_external_interfaces/TCSDataDefinitions/TCSPublicStatus/CurrentTimes/ClockTimes/Write minutesTime.vi"/>
+			<Item Name="Write ra.vi" Type="VI" URL="../TCS/TCS_external_interfaces/TCSDataDefinitions/TCSCommand/TargetConfiguration/Target/FixedTarget/RADecParameters/Write ra.vi"/>
+			<Item Name="Write raDecParameters.vi" Type="VI" URL="../TCS/TCS_external_interfaces/TCSDataDefinitions/TCSCommand/TargetConfiguration/Target/FixedTarget/RADecTarget/Write raDecParameters.vi"/>
+			<Item Name="Write secondsArc.vi" Type="VI" URL="../TCS/TCS_external_interfaces/TCSDataDefinitions/TCSCommand/TargetConfiguration/Target/FixedTarget/Declination/Write secondsArc.vi"/>
+			<Item Name="Write secondsTime.vi" Type="VI" URL="../TCS/TCS_external_interfaces/TCSDataDefinitions/TCSPublicStatus/CurrentTimes/ClockTimes/Write secondsTime.vi"/>
 			<Item Name="wsock32.dll" Type="Document" URL="wsock32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
