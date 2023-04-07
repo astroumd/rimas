@@ -1,0 +1,44 @@
+<scienceTargetConfiguration>
+   <commandID>735812265</commandID>
+   <tcsErrorResponse>
+      <code>0</code>
+      <source></source>
+      <status>false</status>
+   </tcsErrorResponse>
+   <target class="TCSDataDefinitions.TCSCommand.TargetConfiguration.Target.FixedTarget.RADecTarget">
+      <difftrack class="TCSDataDefinitions.TCSCommand.TargetConfiguration.Target.DifftrackRADec">
+         <dDec_ArcsPS>0.0</dDec_ArcsPS>
+         <dRA_ArcsPS>0.0</dRA_ArcsPS>
+      </difftrack>
+      <parallax_Arcsec>0.0</parallax_Arcsec>
+      <properMotion>
+         <epochPM_Yr>2000.0</epochPM_Yr>
+         <pmDec_masPYr>12.5</pmDec_masPYr>
+         <pmRA_masPYr>7.0</pmRA_masPYr>
+      </properMotion>
+      <rv_kps>0.0</rv_kps>
+      <targetName>TYC 4782-00940-1</targetName>
+      <raDecParameters>
+         <declination>
+            <degreesDec>-0.3200583333333333</degreesDec>
+            <minutesArc>0.0</minutesArc>
+            <secondsArc>0.0</secondsArc>
+         </declination>
+         <equinoxPrefix>J</equinoxPrefix>
+         <equinoxYear>2000.0</equinoxYear>
+         <frame>FK5</frame>
+         <ra>
+            <hours>6.001030833333333</hours>
+            <minutesTime>0.0</minutesTime>
+            <secondsTime>0.0</secondsTime>
+         </ra>
+      </raDecParameters>
+   </target>
+   <targetConfigName>TYC 4782-00940-1</targetConfigName>
+   <wl_microns>0.5</wl_microns>
+   <fracrate>1.0</fracrate>
+   <rotator>
+      <rotPA>0.0</rotPA>
+      <rotatorFrame>Target</rotatorFrame>
+   </rotator>
+</scienceTargetConfiguration>
