@@ -89,6 +89,7 @@
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Lake Shore 325.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Lake Shore 325/Lake Shore 325.lvlib"/>
+				<Item Name="Lake Shore Cryotronics 218.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Lake Shore Cryotronics 218/Lake Shore Cryotronics 218.lvlib"/>
 				<Item Name="Lake Shore Cryotronics 331.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Lake Shore Cryotronics 331/Lake Shore Cryotronics 331.lvlib"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
