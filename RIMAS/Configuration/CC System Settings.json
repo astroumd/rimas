@@ -1,0 +1,562 @@
+{
+  "Arduino Focus Settings":{"Port":"ArduinoFocus","Homing Parameters":{"Direction":false,"NUMBER OF  STEPS":13000,"SPEED STEPS/SEC":1000,"ACC/DECEL STEPS/SEC^2":1000,"EN/DIS?":true},"Positions":[0,0],"Homed":[true,true]},
+  "Cryo Alarms":{
+    "Enabled":false,
+    "Reject Shutdown Temp":40,
+    "Reject Temp Warning":20,
+    "Temperature Error Max":4
+  },
+  "CryoCooler Settings":{"Cryo Addr":["Cryo1","Cryo2","Cryo3"]},
+  "Detector Config PRIME":{
+    "Detector Computer":{
+      "FITS File Path":"/local/data/fermi-grb1/home/rimas/dev/h2rg/fitdat",
+      "Header Path":"/local/data/fermi-grb1/home/rimas/dev/h2rg/header",
+      "Machine":"127.0.0.1",
+      "Name":"PRIME",
+      "Password":"R!MAS1grb",
+      "Port":20750
+    },
+    "Detector":0,
+    "FITS Data File Path":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\PRIME FITS Images",
+    "FITS Detector Settings":{
+      "# of Frames":1,
+      "# of Groups":1,
+      "Exp Time Long":2,
+      "Exp Time Short":1,
+      "Image Type":"",
+      "Object Name":"Auto",
+      "Object":"",
+      "Obs Type":"",
+      "Observer Affiliation":"",
+      "Observer":""
+    },
+    "FITS hdr template0":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\FITS Templates\\header0.dat",
+    "FITS hdr template1":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\FITS Templates\\header1.dat",
+    "Frame Int Time":3,
+    "Integration Mode":"CDS",
+    "Integration Time":3,
+    "Offsets":[
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "Sim Folder":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\PRIME Simulation FITS Images"
+  },
+  "Detector Config RIMAS":{
+    "Detector Computer":{
+      "FITS File Path":"/local/data/fermi-grb1/home/rimas/dev/h2rg/fitdat",
+      "Header Path":"/local/data/fermi-grb1/home/rimas/dev/h2rg/header",
+      "Machine":"192.168.121.11",
+      "Name":"RIMAS",
+      "Password":"R!MAS1grb",
+      "Port":44444
+    },
+    "Detector":0,
+    "FITS Data File Path":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\PRIME FITS Images",
+    "FITS Detector Settings":{
+      "# of Frames":1,
+      "# of Groups":1,
+      "Exp Time Long":2,
+      "Exp Time Short":1,
+      "Image Type":"",
+      "Object Name":"",
+      "Object":"",
+      "Obs Type":"",
+      "Observer Affiliation":"",
+      "Observer":""
+    },
+    "FITS hdr template0":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\FITS Templates\\header0.dat",
+    "FITS hdr template1":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\FITS Templates\\header1.dat",
+    "Frame Int Time":0,
+    "Integration Mode":"SSR",
+    "Integration Time":0,
+    "Offsets":[
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "Sim Folder":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\PRIME Simulation FITS Images"
+  },
+  "Detector Config Simulation":{
+    "Detector Computer":{
+      "FITS File Path":"/local/data/fermi-grb1/home/rimas/dev/h2rg/fitdat",
+      "Header Path":"/local/data/fermi-grb1/home/rimas/dev/h2rg/header",
+      "Machine":"",
+      "Name":"Simulation",
+      "Password":"R!MAS1grb",
+      "Port":44444
+    },
+    "Detector":0,
+    "FITS Data File Path":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\PRIME FITS Images",
+    "FITS Detector Settings":{
+      "# of Frames":1,
+      "# of Groups":1,
+      "Exp Time Long":2,
+      "Exp Time Short":1,
+      "Image Type":"",
+      "Object Name":"",
+      "Object":"",
+      "Obs Type":"",
+      "Observer Affiliation":"",
+      "Observer":""
+    },
+    "FITS hdr template0":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\FITS Templates\\header0.dat",
+    "FITS hdr template1":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\FITS Templates\\header1.dat",
+    "Frame Int Time":10,
+    "Integration Mode":"SSR",
+    "Integration Time":0,
+    "Offsets":[
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "Sim Folder":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\PRIME Simulation FITS Images"
+  },
+  "Filter Wheel Settings RIMAS":{
+    "Addr":"COM15",
+    "Default Speed":200,
+    "Filters":[
+      {
+        "Names":[
+          "Grism",
+          "Open",
+          "lowresVPH",
+          "medresVPH",
+          "Y",
+          "J"
+        ],
+        "Relative Position":[0,10000,17000,25000,33000,40000],
+        "Size":50000,
+        "Wheel Name":"FW YJ"
+      },
+      {
+        "Names":[
+          "Grism",
+          "Open",
+          "lowresVPH",
+          "medresVPH",
+          "H",
+          "K"
+        ],
+        "Relative Position":[0,10000,17000,25000,33000,40000],
+        "Size":50000,
+        "Wheel Name":"FW HK"
+      },
+      {
+        "Names":["Lrg Open","A","B","C","D","E","F"],
+        "Relative Position":[0,6249,12348,17906,23456,29019,34581],
+        "Size":40141,
+        "Wheel Name":"Aux"
+      },
+      {
+        "Names":[
+          "80um",
+          "250um",
+          "Open",
+          "Blank",
+          "Long",
+          "150um"
+        ],
+        "Relative Position":[0,7222,14111,19889,25556,32778],
+        "Size":40000,
+        "Wheel Name":"Slit"
+      }
+    ],
+    "Homing Parameters":{
+      "Accel":400,
+      "Direction (F: CW)":true,
+      "Error Cnts":300,
+      "Homing Deltas":[3000,3250,-680,-1560],
+      "Speed":400
+    },
+    "Invalid Combinations":[[]],
+    "Name":"RIMAS",
+    "Num Wheels":4,
+    "Simulate":false
+  },
+  "Filter Wheel Settings Simulation":{
+    "Addr":"COM15",
+    "Default Speed":200,
+    "Filters":[
+      {
+        "Names":["Grism","blocked","open","VPH","J","Y"],
+        "Relative Position":[10000,7000,8000,8000,7000,10000],
+        "Wheel Name":"FW YJ"
+      },
+      {
+        "Names":["Grism","blocked","open","VPH","H","K"],
+        "Relative Position":[10000,7000,8000,8000,7000,10000],
+        "Wheel Name":"FW HK"
+      },
+      {
+        "Names":[
+          "135",
+          "blocked",
+          "80",
+          "open 1",
+          "250",
+          "open"
+        ],
+        "Relative Position":[6000,6000,7000,7000,7000,7000],
+        "Wheel Name":"Slit wheel"
+      },
+      {
+        "Names":["A","B","C","D","E","F","G","H"],
+        "Relative Position":[5000,5000,5000,5000,5000,5000,5000,5000],
+        "Wheel Name":"FW aux"
+      }
+    ],
+    "Homing Parameters":{
+      "Accel":400,
+      "Direction (F: CW)":true,
+      "Error Cnts":100,
+      "Homing Deltas":[3000,3000,-680,-1560],
+      "Speed":150
+    },
+    "Invalid Combinations":[[]],
+    "Name":"Simulation",
+    "Num Wheels":4,
+    "Simulate":true
+  },
+  "Focus Settings Arduino":{
+    "Last Positions":[0,0],
+    "Motion Settings":{
+      "Steps Per Sec 2":100,
+      "Steps Per Sec":100
+    },
+    "Type":"Arduino"
+  },
+  "Focus Settings Default":{
+    "Last Positions":[0,0],
+    "Motion Settings":{
+      "Steps Per Sec 2":100,
+      "Steps Per Sec":100
+    },
+    "Type":"Arduino"
+  },
+  "Hardware Settings":{
+    "Installed Hardware":[
+      {
+        "All Instances":["Simulation","RIMAS"],
+        "Curr Device Name":"RIMAS",
+        "Device Type Name":"filter wheel"
+      },
+      {
+        "All Instances":["Simulation","Lakeshore 325"],
+        "Curr Device Name":"Lakeshore 325",
+        "Device Type Name":"temp control 1"
+      },
+      {
+        "All Instances":["simulation","Lakeshore 331"],
+        "Curr Device Name":"Lakeshore 331",
+        "Device Type Name":"temp control 2"
+      },
+      {
+        "All Instances":["Simulation","Lowell","PRIME"],
+        "Curr Device Name":"Simulation",
+        "Device Type Name":"telescope"
+      },
+      {
+        "All Instances":["Simulation","Lakeshore 218"],
+        "Curr Device Name":"Lakeshore 218",
+        "Device Type Name":"temp control 3"
+      },
+      {
+        "All Instances":["Simulation","Arduino","New Focus"],
+        "Curr Device Name":"Arduino",
+        "Device Type Name":"focus"
+      },
+      {
+        "All Instances":["Simulation","Lesker"],
+        "Curr Device Name":"Lesker",
+        "Device Type Name":"pressure monitor"
+      },
+      {
+        "All Instances":["Simulation","RIMAS"],
+        "Curr Device Name":"RIMAS",
+        "Device Type Name":"cryocooler"
+      },
+      {
+        "All Instances":["Simulation","RIMAS","PRIME"],
+        "Curr Device Name":"PRIME",
+        "Device Type Name":"detector"
+      }
+    ]
+  },
+  "Homing Parameters":{
+    "Accel":400,
+    "Direction (F: CW)":true,
+    "Error Cnts":300,
+    "Homing Deltas":[3000,3250,-680,-1560],
+    "Speed":200
+  },
+  "LDT Telescope Settings":{
+    "host":"tanagra.lowell.edu",
+    "port":"61616"
+  },
+  "Lakeshore 331 Parameters":{
+    "Control Parameters":{"D":0,"I":18,"P":82},
+    "Default Range":1,
+    "Heater Range":1,
+    "Manual Power (%)":20,
+    "Mode":0,
+    "Setpoint":100
+  },
+  "Lakeshore 331":{
+    "Addr":"LakeShore331",
+    "Ch Prefix":"LS331",
+    "Ch Select":[]
+  },
+  "Lakeshore331":{
+    "Addr":"GPIB0::12::INSTR",
+    "Ch Prefix":"",
+    "Ch Select":[]
+  },
+  "PRIME Detector Settings":{
+    "Python Server":"C:\\PycharmProjects\\asdetector"
+  },
+  "Pressur Monitor Settings":{
+    "Enabled?":[true,false],
+    "Filaments":[],
+    "Lesker Addrs":["Lesker"],
+    "Pressure Alarm Level":10
+  },
+  "System Settings":{
+    "HK Table Name":"",
+    "Images Folder":"E:\\asdetector-data\\output\\raw\\20230915",
+    "Obs File":"C:\\Users\\gsfcprime\\Documents\\LabVIEW Data\\TestTarget.csv"
+  },
+  "WebRelay10 Settings":{
+    "Address":"192.168.121.216",
+    "Names":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}es":[],
+    "Port":80
+  }
+}
