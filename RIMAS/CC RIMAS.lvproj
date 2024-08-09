@@ -67,6 +67,9 @@
 		<Item Name="Observation Queue" Type="Folder" URL="../Observation Queue">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Power Distribution" Type="Folder" URL="../Power Distribution">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Pressure Monitor" Type="Folder" URL="../Pressure Monitor">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -89,16 +92,27 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="ActiveMQBroker.lvclass" Type="LVClass" URL="../TCS/DCT-related/Common/Communication/ActiveMQ/ActiveMQBroker/ActiveMQBroker.lvclass"/>
+		<Item Name="CC Create Script.vi" Type="VI" URL="../CC Create Script.vi"/>
 		<Item Name="CC Main.vi" Type="VI" URL="../CC Main.vi"/>
 		<Item Name="CC Template.vit" Type="VI" URL="../CC Template.vit"/>
 		<Item Name="cfitsio.dll" Type="Document" URL="/&lt;userlib&gt;/gfitsio/cfitsio.dll"/>
 		<Item Name="Rd Wr settings json template.vit" Type="VI" URL="../Rd Wr settings json template.vit"/>
-		<Item Name="Read_plot_bin_converted.vi" Type="VI" URL="../../../../VIs/PRIME/TDMS_read/Read_plot_bin_converted.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
+				<Item Name="ColdCathode FullScale Adjustment.vi" Type="VI" URL="/&lt;instrlib&gt;/MKS 972B/Public/Configure/ColdCathode FullScale Adjustment.vi"/>
+				<Item Name="ColdCathode Zero Adjustment.vi" Type="VI" URL="/&lt;instrlib&gt;/MKS 972B/Public/Configure/ColdCathode Zero Adjustment.vi"/>
 				<Item Name="Lake Shore 325.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Lake Shore 325/Lake Shore 325.lvlib"/>
+				<Item Name="Lake Shore 336.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Lake Shore 336/Lake Shore 336.lvlib"/>
 				<Item Name="Lake Shore Cryotronics 218.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Lake Shore Cryotronics 218/Lake Shore Cryotronics 218.lvlib"/>
 				<Item Name="Lake Shore Cryotronics 331.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Lake Shore Cryotronics 331/Lake Shore Cryotronics 331.lvlib"/>
+				<Item Name="MicroPirani Atmospheric Adjustment.vi" Type="VI" URL="/&lt;instrlib&gt;/MKS 972B/Public/Configure/MicroPirani Atmospheric Adjustment.vi"/>
+				<Item Name="MicroPirani AutoZero Limit.vi" Type="VI" URL="/&lt;instrlib&gt;/MKS 972B/Public/Configure/MicroPirani AutoZero Limit.vi"/>
+				<Item Name="MicroPirani Gas Calibration.vi" Type="VI" URL="/&lt;instrlib&gt;/MKS 972B/Public/Configure/MicroPirani Gas Calibration.vi"/>
+				<Item Name="MicroPirani Zero Adjustment.vi" Type="VI" URL="/&lt;instrlib&gt;/MKS 972B/Public/Configure/MicroPirani Zero Adjustment.vi"/>
+				<Item Name="MKS 972B.lvlib" Type="Library" URL="/&lt;instrlib&gt;/MKS 972B/MKS 972B.lvlib"/>
+				<Item Name="Set Pressure Unit.vi" Type="VI" URL="/&lt;instrlib&gt;/MKS 972B/Public/Configure/Set Pressure Unit.vi"/>
+				<Item Name="Set User Switch.vi" Type="VI" URL="/&lt;instrlib&gt;/MKS 972B/Public/Configure/Set User Switch.vi"/>
+				<Item Name="Set User Tag.vi" Type="VI" URL="/&lt;instrlib&gt;/MKS 972B/Public/Configure/Set User Tag.vi"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="gfitsio.lvlib" Type="Library" URL="/&lt;userlib&gt;/gfitsio/gfitsio.lvlib"/>
@@ -128,7 +142,6 @@
 				<Item Name="Create ActiveX Event Queue.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Create ActiveX Event Queue.vi"/>
 				<Item Name="Create Directory Recursive.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Create Directory Recursive.vi"/>
 				<Item Name="Create Error Clust.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Create Error Clust.vi"/>
-				<Item Name="Create File and Containing Folders.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Create File and Containing Folders.vi"/>
 				<Item Name="Create Mask By Alpha.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Create Mask By Alpha.vi"/>
 				<Item Name="Delimited String to 1D String Array.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Delimited String to 1D String Array.vi"/>
 				<Item Name="Destroy ActiveX Event Queue.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Destroy ActiveX Event Queue.vi"/>
@@ -166,6 +179,7 @@
 				<Item Name="JDP Utility.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/JDP Utility.lvlib"/>
 				<Item Name="JSONtext LVClass Serializer.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/JDP Science/JSONtext/LVClass Serializer/JSONtext LVClass Serializer.lvclass"/>
 				<Item Name="JSONtext.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JSONtext/JSONtext.lvlib"/>
+				<Item Name="LabVIEWHTTPClient.lvlib" Type="Library" URL="/&lt;vilib&gt;/httpClient/LabVIEWHTTPClient.lvlib"/>
 				<Item Name="Less Comparable.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Comparison/Less/Less Comparable/Less Comparable.lvclass"/>
 				<Item Name="Less Functor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Comparison/Less/Less Functor/Less Functor.lvclass"/>
 				<Item Name="Less.vim" Type="VI" URL="/&lt;vilib&gt;/Comparison/Less.vim"/>
@@ -179,6 +193,7 @@
 				<Item Name="LVPoint32TypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPoint32TypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
+				<Item Name="LVRowAndColumnUnsignedTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnUnsignedTypeDef.ctl"/>
 				<Item Name="MD5Checksum core.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/MD5Checksum.llb/MD5Checksum core.vi"/>
 				<Item Name="MD5Checksum File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/MD5Checksum.llb/MD5Checksum File.vi"/>
 				<Item Name="MD5Checksum format message-digest.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/MD5Checksum.llb/MD5Checksum format message-digest.vi"/>
@@ -199,6 +214,7 @@
 				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
 				<Item Name="Open Registry Key.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Open Registry Key.vi"/>
 				<Item Name="Open_Create_Replace File.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/Open_Create_Replace File.vi"/>
+				<Item Name="Path To Command Line String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Path To Command Line String.vi"/>
 				<Item Name="Path to URL inner.vi" Type="VI" URL="/&lt;vilib&gt;/printing/PathToURL.llb/Path to URL inner.vi"/>
 				<Item Name="Path to URL.vi" Type="VI" URL="/&lt;vilib&gt;/printing/PathToURL.llb/Path to URL.vi"/>
 				<Item Name="PathToUNIXPathString.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/CFURL.llb/PathToUNIXPathString.vi"/>
@@ -278,18 +294,13 @@
 			<Item Name="Advapi32.dll" Type="Document" URL="Advapi32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="CC Create Script.vi" Type="VI" URL="../CC Create Script.vi"/>
 			<Item Name="CC MainMenu.rtm" Type="Document" URL="../CC MainMenu.rtm"/>
-			<Item Name="HK Channel enum Data Type.ctl" Type="VI" URL="../../../hk-channel-class/HK Item/HK Channel enum Data Type.ctl"/>
-			<Item Name="HK Channel Units and Setup.ctl" Type="VI" URL="../../../hk-channel-class/HK Item/HK Channel Units and Setup.ctl"/>
-			<Item Name="HK Item.lvclass" Type="LVClass" URL="../../../hk-channel-class/HK Item/HK Item.lvclass"/>
 			<Item Name="HK Table.lvclass" Type="LVClass" URL="../../../hk-channel-class/HK Table/HK Table.lvclass"/>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="Read_bin_2D_arr.vi" Type="VI" URL="../../../../VIs/PRIME/Files_IO/Read_bin_2D_arr.vi"/>
-			<Item Name="RIMAS Detector FITS hdr update detector settings.vi" Type="VI" URL="../Detector/Detector Class/RIMAS Detector/RIMAS Detector FITS hdr update detector settings.vi"/>
+			<Item Name="Read FITS Header.vi" Type="VI" URL="../Detector/Detector Class/RIMAS Detector/Read FITS Header.vi"/>
 			<Item Name="RIMAS Detector Init.vi" Type="VI" URL="../Detector/Detector Class/RIMAS Detector/RIMAS Detector Init.vi"/>
 			<Item Name="RIMAS Detector Read Scan Filenames.vi" Type="VI" URL="../Detector/Detector Class/RIMAS Detector/RIMAS Detector Read Scan Filenames.vi"/>
 			<Item Name="RIMAS Detector SCP File To Server.vi" Type="VI" URL="../Detector/Detector Class/RIMAS Detector/RIMAS Detector SCP File To Server.vi"/>
@@ -297,7 +308,6 @@
 			<Item Name="RIMAS Detector Send Configuration.vi" Type="VI" URL="../Detector/Detector Class/RIMAS Detector/RIMAS Detector Send Configuration.vi"/>
 			<Item Name="RIMAS Detector Start.vi" Type="VI" URL="../Detector/Detector Class/RIMAS Detector/RIMAS Detector Start.vi"/>
 			<Item Name="RIMAS Detector Update FITS Header.vi" Type="VI" URL="../Detector/Detector Class/RIMAS Detector/RIMAS Detector Update FITS Header.vi"/>
-			<Item Name="RIMAS FITS Header Update Offsets.vi" Type="VI" URL="../Detector/Detector Class/RIMAS Detector/RIMAS FITS Header Update Offsets.vi"/>
 			<Item Name="Serial - Settings.ctl" Type="VI" URL="../Serial - Settings.ctl"/>
 			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -327,7 +337,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{993CE843-CE74-4B61-89F6-B06A97D61216}</Property>
-				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.build" Type="Int">23</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">RIMAS CC.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/RIMAS Camera Control/RIMAS CC.exe</Property>
@@ -336,7 +346,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/RIMAS Camera Control/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{716E126A-9F0A-4832-A36E-A3B54D4835F9}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{634D318B-486C-448D-89C9-C390ED719318}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/CC Main.vi</Property>
@@ -345,6 +355,23 @@
 				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[10].itemID" Type="Ref">/My Computer/cfitsio.dll</Property>
 				<Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[11].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[11].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[11].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[11].itemID" Type="Ref">/My Computer/ActiveMQ_dll</Property>
+				<Property Name="Source[11].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[11].type" Type="Str">Container</Property>
+				<Property Name="Source[12].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[12].itemID" Type="Ref">/My Computer/Observation Queue/CC Observation Queue GUI.vi</Property>
+				<Property Name="Source[12].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[12].type" Type="Str">VI</Property>
+				<Property Name="Source[13].itemID" Type="Ref">/My Computer/Configuration/CC Install Simulation Config File.vi</Property>
+				<Property Name="Source[13].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[13].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[13].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[13].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[13].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[13].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/CryoCooler/CryoCooler GUI.vi</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
@@ -369,7 +396,6 @@
 				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Scripts/CC Script GUI.vi</Property>
 				<Property Name="Source[7].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[7].type" Type="Str">VI</Property>
-				<Property Name="Source[8].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[8].itemID" Type="Ref">/My Computer/Telescope/Telescope GUI.vi</Property>
 				<Property Name="Source[8].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[8].type" Type="Str">VI</Property>
@@ -377,7 +403,7 @@
 				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Temp Control/Temp Control GUI.vi</Property>
 				<Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[9].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">11</Property>
+				<Property Name="SourceCount" Type="Int">14</Property>
 				<Property Name="TgtF_companyName" Type="Str">NASA</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">RIMAS Camera Control</Property>
 				<Property Name="TgtF_internalName" Type="Str">RIMAS Camera Control</Property>
@@ -386,6 +412,104 @@
 				<Property Name="TgtF_targetfileGUID" Type="Str">{278A44B4-6BC3-45D8-BA88-8CE654B0251D}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">RIMAS CC.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+			<Item Name="RIMAS Installer" Type="Installer">
+				<Property Name="Destination[0].name" Type="Str">RIMAS</Property>
+				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
+				<Property Name="Destination[0].tag" Type="Str">{C5D66D9E-89DD-4FA4-ABCA-556E5360183A}</Property>
+				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
+				<Property Name="DestinationCount" Type="Int">1</Property>
+				<Property Name="DistPart[0].flavorID" Type="Str">_full_</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{F19060DD-AA3B-4C3D-8E47-5792E36DFF3A}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI-488.2 Runtime 21.5</Property>
+				<Property Name="DistPart[0].upgradeCode" Type="Str">{357F6618-C660-41A2-A185-5578CC876D1D}</Property>
+				<Property Name="DistPart[1].flavorID" Type="Str">_full_</Property>
+				<Property Name="DistPart[1].productID" Type="Str">{32AD5200-879B-4D23-9785-747C4B19067E}</Property>
+				<Property Name="DistPart[1].productName" Type="Str">NI-Serial Runtime 21.5</Property>
+				<Property Name="DistPart[1].upgradeCode" Type="Str">{01D82F43-B48D-46FF-8601-FC4FAAE20F41}</Property>
+				<Property Name="DistPart[2].flavorID" Type="Str">_deployment_</Property>
+				<Property Name="DistPart[2].productID" Type="Str">{016644E7-BFD9-410F-902D-962614CB4E72}</Property>
+				<Property Name="DistPart[2].productName" Type="Str">NI-VISA Runtime 22.5</Property>
+				<Property Name="DistPart[2].upgradeCode" Type="Str">{8627993A-3F66-483C-A562-0D3BA3F267B1}</Property>
+				<Property Name="DistPart[3].flavorID" Type="Str">DefaultFull</Property>
+				<Property Name="DistPart[3].productID" Type="Str">{A6603764-BA80-48E9-9E68-1C876DDDC916}</Property>
+				<Property Name="DistPart[3].productName" Type="Str">NI LabVIEW Runtime 2022 Q3 Patch 1</Property>
+				<Property Name="DistPart[3].SoftDep[0].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[3].SoftDep[0].productName" Type="Str">NI ActiveX Container</Property>
+				<Property Name="DistPart[3].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
+				<Property Name="DistPart[3].SoftDep[1].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[3].SoftDep[1].productName" Type="Str">NI Deployment Framework 2022</Property>
+				<Property Name="DistPart[3].SoftDep[1].upgradeCode" Type="Str">{838942E4-B73C-492E-81A3-AA1E291FD0DC}</Property>
+				<Property Name="DistPart[3].SoftDep[10].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[3].SoftDep[10].productName" Type="Str">NI VC2015 Runtime</Property>
+				<Property Name="DistPart[3].SoftDep[10].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
+				<Property Name="DistPart[3].SoftDep[11].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[3].SoftDep[11].productName" Type="Str">NI TDM Streaming 22.3</Property>
+				<Property Name="DistPart[3].SoftDep[11].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
+				<Property Name="DistPart[3].SoftDep[2].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[3].SoftDep[2].productName" Type="Str">NI Error Reporting 2020</Property>
+				<Property Name="DistPart[3].SoftDep[2].upgradeCode" Type="Str">{42E818C6-2B08-4DE7-BD91-B0FD704C119A}</Property>
+				<Property Name="DistPart[3].SoftDep[3].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[3].SoftDep[3].productName" Type="Str">NI LabVIEW Real-Time NBFifo 2022</Property>
+				<Property Name="DistPart[3].SoftDep[3].upgradeCode" Type="Str">{662E78D2-A4FF-3910-B34B-AE7298505A08}</Property>
+				<Property Name="DistPart[3].SoftDep[4].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[3].SoftDep[4].productName" Type="Str">NI LabVIEW Runtime 2022 Q3 Non-English Support.</Property>
+				<Property Name="DistPart[3].SoftDep[4].upgradeCode" Type="Str">{CF1A7558-7F6E-3A4D-92E2-1DD8C05011C0}</Property>
+				<Property Name="DistPart[3].SoftDep[5].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[3].SoftDep[5].productName" Type="Str">NI Logos 22.3</Property>
+				<Property Name="DistPart[3].SoftDep[5].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
+				<Property Name="DistPart[3].SoftDep[6].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[3].SoftDep[6].productName" Type="Str">NI LabVIEW Web Server 2022</Property>
+				<Property Name="DistPart[3].SoftDep[6].upgradeCode" Type="Str">{0960380B-EA86-4E0C-8B57-14CD8CCF2C15}</Property>
+				<Property Name="DistPart[3].SoftDep[7].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[3].SoftDep[7].productName" Type="Str">NI mDNS Responder 22.5</Property>
+				<Property Name="DistPart[3].SoftDep[7].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
+				<Property Name="DistPart[3].SoftDep[8].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[3].SoftDep[8].productName" Type="Str">Math Kernel Libraries 2017</Property>
+				<Property Name="DistPart[3].SoftDep[8].upgradeCode" Type="Str">{699C1AC5-2CF2-4745-9674-B19536EBA8A3}</Property>
+				<Property Name="DistPart[3].SoftDep[9].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[3].SoftDep[9].productName" Type="Str">Math Kernel Libraries 2020</Property>
+				<Property Name="DistPart[3].SoftDep[9].upgradeCode" Type="Str">{9872BBBA-FB96-42A4-80A2-9605AC5CBCF1}</Property>
+				<Property Name="DistPart[3].SoftDepCount" Type="Int">12</Property>
+				<Property Name="DistPart[3].upgradeCode" Type="Str">{32C926F2-5C92-3338-8348-97AFEFCAD100}</Property>
+				<Property Name="DistPartCount" Type="Int">4</Property>
+				<Property Name="INST_author" Type="Str">NASA</Property>
+				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
+				<Property Name="INST_buildLocation" Type="Path">../builds/RIMAS/RIMAS Installer</Property>
+				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
+				<Property Name="INST_buildSpecName" Type="Str">RIMAS Installer</Property>
+				<Property Name="INST_defaultDir" Type="Str">{C5D66D9E-89DD-4FA4-ABCA-556E5360183A}</Property>
+				<Property Name="INST_includeError" Type="Bool">false</Property>
+				<Property Name="INST_installerName" Type="Str">install.exe</Property>
+				<Property Name="INST_productName" Type="Str">RIMAS</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.3</Property>
+				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
+				<Property Name="InstSpecVersion" Type="Str">22308000</Property>
+				<Property Name="MSI_arpCompany" Type="Str">NASA</Property>
+				<Property Name="MSI_arpURL" Type="Str">http://www.nasa.com/</Property>
+				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
+				<Property Name="MSI_distID" Type="Str">{78492FE5-AC5A-4A1D-A4C8-0088DFB1B295}</Property>
+				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
+				<Property Name="MSI_osCheck" Type="Int">0</Property>
+				<Property Name="MSI_upgradeCode" Type="Str">{0F79858D-3791-4622-A961-0FA44B21E6D1}</Property>
+				<Property Name="MSI_windowTitle" Type="Str">RIMAS Camera Control</Property>
+				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
+				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
+				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
+				<Property Name="RegDestCount" Type="Int">1</Property>
+				<Property Name="Source[0].dest" Type="Str">{C5D66D9E-89DD-4FA4-ABCA-556E5360183A}</Property>
+				<Property Name="Source[0].File[0].dest" Type="Str">{C5D66D9E-89DD-4FA4-ABCA-556E5360183A}</Property>
+				<Property Name="Source[0].File[0].name" Type="Str">RIMAS CC.exe</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">RIMAS CC</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">CC RIMAS</Property>
+				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[0].File[0].tag" Type="Str">{278A44B4-6BC3-45D8-BA88-8CE654B0251D}</Property>
+				<Property Name="Source[0].FileCount" Type="Int">1</Property>
+				<Property Name="Source[0].name" Type="Str">RIMAS Camera Control</Property>
+				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/RIMAS Camera Control</Property>
+				<Property Name="Source[0].type" Type="Str">EXE</Property>
+				<Property Name="SourceCount" Type="Int">1</Property>
 			</Item>
 			<Item Name="RIMAS Telescope Interface" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
@@ -404,7 +528,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Configuration/Post Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{C5D5E0A7-9F03-4A75-8166-86BA65EF081B}</Property>
-				<Property Name="Bld_version.build" Type="Int">16</Property>
+				<Property Name="Bld_version.build" Type="Int">21</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">RIMAS Telescope Test.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/RIMAS Telescope Interface/RIMAS Telescope Test.exe</Property>
@@ -426,7 +550,6 @@
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Telescope/LDT Telescope/LDT Telescope.lvclass/LDT Telescope Loop.vi</Property>
-				<Property Name="Source[3].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[3].type" Type="Str">VI</Property>
 				<Property Name="Source[4].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[4].Container.depDestIndex" Type="Int">0</Property>
@@ -500,7 +623,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{F6D25424-E693-4332-8CCE-A5CF71F161E9}</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">RIMAS Telescope Test</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.1</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.2</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">22308000</Property>
 				<Property Name="MSI_arpCompany" Type="Str">NASA</Property>

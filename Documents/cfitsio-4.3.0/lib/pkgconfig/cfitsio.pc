@@ -1,0 +1,12 @@
+prefix=C:/Users/birby/cmake/installed
+exec_prefix=C:/Users/birby/cmake/installed
+libdir=C:/Users/birby/cmake/installed/lib
+includedir=C:/Users/birby/cmake/installed/include/
+
+Name: cfitsio
+Description: FITS File Subroutine Library
+URL: https://heasarc.gsfc.nasa.gov/fitsio/
+Version: 4.3.0
+Libs: -L${libdir} -lcfitsio
+Libs.private:  -lz -lm
+Cflags: -I${includedir}
