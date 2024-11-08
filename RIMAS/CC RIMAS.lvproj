@@ -95,7 +95,6 @@
 		<Item Name="CC Create Script.vi" Type="VI" URL="../CC Create Script.vi"/>
 		<Item Name="CC Main.vi" Type="VI" URL="../CC Main.vi"/>
 		<Item Name="CC Template.vit" Type="VI" URL="../CC Template.vit"/>
-		<Item Name="cfitsio.dll" Type="Document" URL="/&lt;userlib&gt;/gfitsio/cfitsio.dll"/>
 		<Item Name="Rd Wr settings json template.vit" Type="VI" URL="../Rd Wr settings json template.vit"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
@@ -115,7 +114,13 @@
 				<Item Name="Set User Tag.vi" Type="VI" URL="/&lt;instrlib&gt;/MKS 972B/Public/Configure/Set User Tag.vi"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
-				<Item Name="gfitsio.lvlib" Type="Library" URL="/&lt;userlib&gt;/gfitsio/gfitsio.lvlib"/>
+				<Item Name="gfitsio-close-file.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-close-file.vi"/>
+				<Item Name="gfitsio-open-create-replace-file.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-open-create-replace-file.vi"/>
+				<Item Name="gfitsio-read-header.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-header.vi"/>
+				<Item Name="gfitsio-read-key-integer.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-key-integer.vi"/>
+				<Item Name="gfitsio-read-key.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-key.vi"/>
+				<Item Name="gfitsio-write-key-double.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-write-key-double.vi"/>
+				<Item Name="gfitsio-write-key.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-write-key.vi"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -295,12 +300,13 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="CC MainMenu.rtm" Type="Document" URL="../CC MainMenu.rtm"/>
+			<Item Name="gfitsio.dll" Type="Document" URL="../gfitsio/gfitsio.dll"/>
+			<Item Name="gfitsio.lvlib" Type="Library" URL="../gfitsio/gfitsio.lvlib"/>
 			<Item Name="HK Table.lvclass" Type="LVClass" URL="../../../hk-channel-class/HK Table/HK Table.lvclass"/>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="Read FITS Header.vi" Type="VI" URL="../Detector/Detector Class/RIMAS Detector/Read FITS Header.vi"/>
 			<Item Name="RIMAS Detector Init.vi" Type="VI" URL="../Detector/Detector Class/RIMAS Detector/RIMAS Detector Init.vi"/>
 			<Item Name="RIMAS Detector Read Scan Filenames.vi" Type="VI" URL="../Detector/Detector Class/RIMAS Detector/RIMAS Detector Read Scan Filenames.vi"/>
 			<Item Name="RIMAS Detector SCP File To Server.vi" Type="VI" URL="../Detector/Detector Class/RIMAS Detector/RIMAS Detector SCP File To Server.vi"/>
@@ -337,7 +343,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{993CE843-CE74-4B61-89F6-B06A97D61216}</Property>
-				<Property Name="Bld_version.build" Type="Int">23</Property>
+				<Property Name="Bld_version.build" Type="Int">25</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">RIMAS CC.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/RIMAS Camera Control/RIMAS CC.exe</Property>
@@ -353,7 +359,7 @@
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[10].itemID" Type="Ref">/My Computer/cfitsio.dll</Property>
+				<Property Name="Source[10].itemID" Type="Ref"></Property>
 				<Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[11].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[11].Container.depDestIndex" Type="Int">0</Property>
@@ -482,7 +488,7 @@
 				<Property Name="INST_includeError" Type="Bool">false</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">RIMAS</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.3</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.5</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">22308000</Property>
 				<Property Name="MSI_arpCompany" Type="Str">NASA</Property>
@@ -509,7 +515,11 @@
 				<Property Name="Source[0].name" Type="Str">RIMAS Camera Control</Property>
 				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/RIMAS Camera Control</Property>
 				<Property Name="Source[0].type" Type="Str">EXE</Property>
-				<Property Name="SourceCount" Type="Int">1</Property>
+				<Property Name="Source[1].dest" Type="Str">{C5D66D9E-89DD-4FA4-ABCA-556E5360183A}</Property>
+				<Property Name="Source[1].name" Type="Str">cfitsio.dll</Property>
+				<Property Name="Source[1].tag" Type="Ref"></Property>
+				<Property Name="Source[1].type" Type="Str">File</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
 			</Item>
 			<Item Name="RIMAS Telescope Interface" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
