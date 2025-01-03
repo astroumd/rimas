@@ -48,23 +48,23 @@
 	</Item>
 	<Item Name="image Extensions" Type="Folder">
 		<Item Name="Read Image Subset" Type="Folder">
-			<Item Name="gfitsio-read-image-subset.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-image-subset.vi"/>
+			<Item Name="gfitsio-read-image-subset.vi" Type="VI" URL="../gfitsio-read-image-subset.vi"/>
 			<Item Name="gfitsio-read-image-subset-variant.vi" Type="VI" URL="../gfitsio-read-image-subset-variant.vi"/>
-			<Item Name="gfitsio-read-image-subset-dbl-scalar.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-image-subset-dbl-scalar.vi"/>
-			<Item Name="gfitsio-read-image-subset-dbl-1d.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-image-subset-dbl-1d.vi"/>
-			<Item Name="gfitsio-read-image-subset-dbl-2d.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-image-subset-dbl-2d.vi"/>
-			<Item Name="gfitsio-read-image-subset-sgl-scalar.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-image-subset-sgl-scalar.vi"/>
-			<Item Name="gfitsio-read-image-subset-sgl-1d.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-image-subset-sgl-1d.vi"/>
+			<Item Name="gfitsio-read-image-subset-dbl-scalar.vi" Type="VI" URL="../gfitsio-read-image-subset-dbl-scalar.vi"/>
+			<Item Name="gfitsio-read-image-subset-dbl-1d.vi" Type="VI" URL="../gfitsio-read-image-subset-dbl-1d.vi"/>
+			<Item Name="gfitsio-read-image-subset-dbl-2d.vi" Type="VI" URL="../gfitsio-read-image-subset-dbl-2d.vi"/>
+			<Item Name="gfitsio-read-image-subset-sgl-scalar.vi" Type="VI" URL="../gfitsio-read-image-subset-sgl-scalar.vi"/>
+			<Item Name="gfitsio-read-image-subset-sgl-1d.vi" Type="VI" URL="../gfitsio-read-image-subset-sgl-1d.vi"/>
 			<Item Name="gfitsio-read-image-subset-sgl-2d.vi" Type="VI" URL="../gfitsio-read-image-subset-sgl-2d.vi"/>
-			<Item Name="gfitsio-read-image-subset-u8-scalar.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-image-subset-u8-scalar.vi"/>
-			<Item Name="gfitsio-read-image-subset-u8-1d.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-image-subset-u8-1d.vi"/>
-			<Item Name="gfitsio-read-image-subset-u8-2d.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-image-subset-u8-2d.vi"/>
-			<Item Name="gfitsio-read-image-subset-i16-scalar.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-image-subset-i16-scalar.vi"/>
-			<Item Name="gfitsio-read-image-subset-i16-1d.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-image-subset-i16-1d.vi"/>
-			<Item Name="gfitsio-read-image-subset-i16-2d.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-image-subset-i16-2d.vi"/>
-			<Item Name="gfitsio-read-image-subset-i32-scalar.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-image-subset-i32-scalar.vi"/>
-			<Item Name="gfitsio-read-image-subset-i32-1d.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-image-subset-i32-1d.vi"/>
-			<Item Name="gfitsio-read-image-subset-i32-2d.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-image-subset-i32-2d.vi"/>
+			<Item Name="gfitsio-read-image-subset-u8-scalar.vi" Type="VI" URL="../gfitsio-read-image-subset-u8-scalar.vi"/>
+			<Item Name="gfitsio-read-image-subset-u8-1d.vi" Type="VI" URL="../gfitsio-read-image-subset-u8-1d.vi"/>
+			<Item Name="gfitsio-read-image-subset-u8-2d.vi" Type="VI" URL="../gfitsio-read-image-subset-u8-2d.vi"/>
+			<Item Name="gfitsio-read-image-subset-i16-scalar.vi" Type="VI" URL="../gfitsio-read-image-subset-i16-scalar.vi"/>
+			<Item Name="gfitsio-read-image-subset-i16-1d.vi" Type="VI" URL="../gfitsio-read-image-subset-i16-1d.vi"/>
+			<Item Name="gfitsio-read-image-subset-i16-2d.vi" Type="VI" URL="../gfitsio-read-image-subset-i16-2d.vi"/>
+			<Item Name="gfitsio-read-image-subset-i32-scalar.vi" Type="VI" URL="../gfitsio-read-image-subset-i32-scalar.vi"/>
+			<Item Name="gfitsio-read-image-subset-i32-1d.vi" Type="VI" URL="../gfitsio-read-image-subset-i32-1d.vi"/>
+			<Item Name="gfitsio-read-image-subset-i32-2d.vi" Type="VI" URL="../gfitsio-read-image-subset-i32-2d.vi"/>
 		</Item>
 		<Item Name="Write Image Subset" Type="Folder">
 			<Item Name="gfitsio-write-image-subset.vi" Type="VI" URL="../gfitsio-write-image-subset.vi"/>
