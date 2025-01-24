@@ -1,5 +1,6 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="22308000">
+	<Property Name="NI.LV.All.SaveVersion" Type="Str">22.3</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -117,10 +118,16 @@
 			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="gfitsio-close-file.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-close-file.vi"/>
+				<Item Name="gfitsio-movabs-hdu.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-movabs-hdu.vi"/>
 				<Item Name="gfitsio-open-create-replace-file.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-open-create-replace-file.vi"/>
+				<Item Name="gfitsio-open-create-replace-image.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-open-create-replace-image.vi"/>
 				<Item Name="gfitsio-read-header.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-header.vi"/>
+				<Item Name="gfitsio-read-image-subset-i32-2d.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-image-subset-i32-2d.vi"/>
+				<Item Name="gfitsio-read-image-subset.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-image-subset.vi"/>
 				<Item Name="gfitsio-read-key-integer.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-key-integer.vi"/>
 				<Item Name="gfitsio-read-key.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-read-key.vi"/>
+				<Item Name="gfitsio-write-image-subset-i32-2d.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-write-image-subset-i32-2d.vi"/>
+				<Item Name="gfitsio-write-image-subset.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-write-image-subset.vi"/>
 				<Item Name="gfitsio-write-key-double.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-write-key-double.vi"/>
 				<Item Name="gfitsio-write-key.vi" Type="VI" URL="/&lt;userlib&gt;/gfitsio/gfitsio-write-key.vi"/>
 			</Item>
@@ -141,6 +148,7 @@
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
 				<Item Name="Close Registry Key.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Close Registry Key.vi"/>
+				<Item Name="Compare Two Paths.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Compare Two Paths.vi"/>
 				<Item Name="compatCalcOffset.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatCalcOffset.vi"/>
 				<Item Name="compatFileDialog.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatFileDialog.vi"/>
 				<Item Name="compatOpenFileOperation.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatOpenFileOperation.vi"/>
@@ -222,6 +230,7 @@
 				<Item Name="NI_report.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Utility/NIReport.llb/NI_report.lvclass"/>
 				<Item Name="NI_ReportGenerationCore.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/NIReport.llb/NI_ReportGenerationCore.lvlib"/>
 				<Item Name="NI_Standard Report.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Utility/NIReport.llb/Standard Report/NI_Standard Report.lvclass"/>
+				<Item Name="NI_SymbolicPaths.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Symbolic Paths/NI_SymbolicPaths.lvlib"/>
 				<Item Name="NI_TDMS File Viewer.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/TDMS File Viewer/NI_TDMS File Viewer.lvlib"/>
 				<Item Name="Normalize End Of Line.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Normalize End Of Line.vi"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
@@ -310,14 +319,11 @@
 				<Item Name="Write PNG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/png.llb/Write PNG File.vi"/>
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
+			<Item Name="_LaunchHelpUrl.vi" Type="VI" URL="/&lt;helpdir&gt;/_LaunchHelpUrl.vi"/>
 			<Item Name="Advapi32.dll" Type="Document" URL="Advapi32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="CC MainMenu.rtm" Type="Document" URL="../CC MainMenu.rtm"/>
-			<Item Name="gfitsio.dll" Type="Document" URL="gfitsio.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="gfitsio.dll" Type="Document" URL="../gfitsio/gfitsio.dll"/>
 			<Item Name="HK Table.lvclass" Type="LVClass" URL="../../../hk-channel-class/HK Table/HK Table.lvclass"/>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -359,7 +365,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{993CE843-CE74-4B61-89F6-B06A97D61216}</Property>
-				<Property Name="Bld_version.build" Type="Int">25</Property>
+				<Property Name="Bld_version.build" Type="Int">28</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">RIMAS CC.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/RIMAS Camera Control/RIMAS CC.exe</Property>
@@ -368,32 +374,35 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/RIMAS Camera Control/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{634D318B-486C-448D-89C9-C390ED719318}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{7918B53E-1D58-4DC8-9BB2-103E3FADD5D5}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/CC Main.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[10].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[10].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[10].itemID" Type="Ref"></Property>
+				<Property Name="Source[10].itemID" Type="Ref">/My Computer/ActiveMQ_dll</Property>
 				<Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[11].Container.applyInclusion" Type="Bool">true</Property>
-				<Property Name="Source[11].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[10].type" Type="Str">Container</Property>
 				<Property Name="Source[11].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[11].itemID" Type="Ref">/My Computer/ActiveMQ_dll</Property>
+				<Property Name="Source[11].itemID" Type="Ref">/My Computer/Observation Queue/CC Observation Queue GUI.vi</Property>
 				<Property Name="Source[11].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[11].type" Type="Str">Container</Property>
-				<Property Name="Source[12].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[12].itemID" Type="Ref">/My Computer/Observation Queue/CC Observation Queue GUI.vi</Property>
-				<Property Name="Source[12].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[11].type" Type="Str">VI</Property>
+				<Property Name="Source[12].itemID" Type="Ref">/My Computer/Configuration/CC Install Simulation Config File.vi</Property>
+				<Property Name="Source[12].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[12].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[12].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[12].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[12].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[12].type" Type="Str">VI</Property>
-				<Property Name="Source[13].itemID" Type="Ref">/My Computer/Configuration/CC Install Simulation Config File.vi</Property>
-				<Property Name="Source[13].properties[0].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[13].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[13].properties[1].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[13].properties[1].value" Type="Bool">true</Property>
-				<Property Name="Source[13].propertiesCount" Type="Int">2</Property>
-				<Property Name="Source[13].type" Type="Str">VI</Property>
+				<Property Name="Source[13].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[13].itemID" Type="Ref">/My Computer/gfitsio.lvlib/cfitsio.dll</Property>
+				<Property Name="Source[13].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[14].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[14].itemID" Type="Ref">/My Computer/gfitsio.lvlib/gfitsio.dll</Property>
+				<Property Name="Source[14].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/CryoCooler/CryoCooler GUI.vi</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
@@ -425,7 +434,7 @@
 				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Temp Control/Temp Control GUI.vi</Property>
 				<Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[9].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">14</Property>
+				<Property Name="SourceCount" Type="Int">15</Property>
 				<Property Name="TgtF_companyName" Type="Str">NASA</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">RIMAS Camera Control</Property>
 				<Property Name="TgtF_internalName" Type="Str">RIMAS Camera Control</Property>
@@ -442,58 +451,55 @@
 				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
 				<Property Name="DestinationCount" Type="Int">1</Property>
 				<Property Name="DistPart[0].flavorID" Type="Str">_full_</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{F19060DD-AA3B-4C3D-8E47-5792E36DFF3A}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI-488.2 Runtime 21.5</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{561BA3B3-3F8E-4AB1-95D4-036508EFA478}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI-488.2 Runtime 24.5</Property>
 				<Property Name="DistPart[0].upgradeCode" Type="Str">{357F6618-C660-41A2-A185-5578CC876D1D}</Property>
 				<Property Name="DistPart[1].flavorID" Type="Str">_full_</Property>
-				<Property Name="DistPart[1].productID" Type="Str">{32AD5200-879B-4D23-9785-747C4B19067E}</Property>
-				<Property Name="DistPart[1].productName" Type="Str">NI-Serial Runtime 21.5</Property>
+				<Property Name="DistPart[1].productID" Type="Str">{03688EE5-C30E-4985-999E-BE8C3FB16DBC}</Property>
+				<Property Name="DistPart[1].productName" Type="Str">NI-Serial Runtime 24.5</Property>
 				<Property Name="DistPart[1].upgradeCode" Type="Str">{01D82F43-B48D-46FF-8601-FC4FAAE20F41}</Property>
 				<Property Name="DistPart[2].flavorID" Type="Str">_deployment_</Property>
-				<Property Name="DistPart[2].productID" Type="Str">{016644E7-BFD9-410F-902D-962614CB4E72}</Property>
-				<Property Name="DistPart[2].productName" Type="Str">NI-VISA Runtime 22.5</Property>
+				<Property Name="DistPart[2].productID" Type="Str">{B8758196-6B1C-4BB1-9A35-E90F06EBB742}</Property>
+				<Property Name="DistPart[2].productName" Type="Str">NI-VISA Runtime 24.5</Property>
 				<Property Name="DistPart[2].upgradeCode" Type="Str">{8627993A-3F66-483C-A562-0D3BA3F267B1}</Property>
 				<Property Name="DistPart[3].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[3].productID" Type="Str">{A6603764-BA80-48E9-9E68-1C876DDDC916}</Property>
-				<Property Name="DistPart[3].productName" Type="Str">NI LabVIEW Runtime 2022 Q3 Patch 1</Property>
+				<Property Name="DistPart[3].productID" Type="Str">{D99BB605-7D9D-4468-A088-6CC200D0A008}</Property>
+				<Property Name="DistPart[3].productName" Type="Str">NI LabVIEW Runtime 2024 Q3 (64-bit)</Property>
 				<Property Name="DistPart[3].SoftDep[0].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[0].productName" Type="Str">NI ActiveX Container</Property>
+				<Property Name="DistPart[3].SoftDep[0].productName" Type="Str">NI ActiveX Container (64-bit)</Property>
 				<Property Name="DistPart[3].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
 				<Property Name="DistPart[3].SoftDep[1].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[1].productName" Type="Str">NI Deployment Framework 2022</Property>
-				<Property Name="DistPart[3].SoftDep[1].upgradeCode" Type="Str">{838942E4-B73C-492E-81A3-AA1E291FD0DC}</Property>
+				<Property Name="DistPart[3].SoftDep[1].productName" Type="Str">NI Deployment Framework 2024 (64-bit)</Property>
+				<Property Name="DistPart[3].SoftDep[1].upgradeCode" Type="Str">{E0D3C7F9-4512-438F-8123-E2050457972B}</Property>
 				<Property Name="DistPart[3].SoftDep[10].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[10].productName" Type="Str">NI VC2015 Runtime</Property>
-				<Property Name="DistPart[3].SoftDep[10].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
-				<Property Name="DistPart[3].SoftDep[11].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[11].productName" Type="Str">NI TDM Streaming 22.3</Property>
-				<Property Name="DistPart[3].SoftDep[11].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
+				<Property Name="DistPart[3].SoftDep[10].productName" Type="Str">NI TDM Streaming 24.3</Property>
+				<Property Name="DistPart[3].SoftDep[10].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
 				<Property Name="DistPart[3].SoftDep[2].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[2].productName" Type="Str">NI Error Reporting 2020</Property>
-				<Property Name="DistPart[3].SoftDep[2].upgradeCode" Type="Str">{42E818C6-2B08-4DE7-BD91-B0FD704C119A}</Property>
+				<Property Name="DistPart[3].SoftDep[2].productName" Type="Str">NI Error Reporting 2020 (64-bit)</Property>
+				<Property Name="DistPart[3].SoftDep[2].upgradeCode" Type="Str">{785BE224-E5B2-46A5-ADCB-55C949B5C9C7}</Property>
 				<Property Name="DistPart[3].SoftDep[3].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[3].productName" Type="Str">NI LabVIEW Real-Time NBFifo 2022</Property>
-				<Property Name="DistPart[3].SoftDep[3].upgradeCode" Type="Str">{662E78D2-A4FF-3910-B34B-AE7298505A08}</Property>
+				<Property Name="DistPart[3].SoftDep[3].productName" Type="Str">NI LabVIEW Real-Time NBFifo 2024</Property>
+				<Property Name="DistPart[3].SoftDep[3].upgradeCode" Type="Str">{57233740-EFE9-3C47-BF6A-4C5981105136}</Property>
 				<Property Name="DistPart[3].SoftDep[4].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[4].productName" Type="Str">NI LabVIEW Runtime 2022 Q3 Non-English Support.</Property>
-				<Property Name="DistPart[3].SoftDep[4].upgradeCode" Type="Str">{CF1A7558-7F6E-3A4D-92E2-1DD8C05011C0}</Property>
+				<Property Name="DistPart[3].SoftDep[4].productName" Type="Str">NI Logos 24.1</Property>
+				<Property Name="DistPart[3].SoftDep[4].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
 				<Property Name="DistPart[3].SoftDep[5].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[5].productName" Type="Str">NI Logos 22.3</Property>
-				<Property Name="DistPart[3].SoftDep[5].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
+				<Property Name="DistPart[3].SoftDep[5].productName" Type="Str">NI LabVIEW Web Server 2024 (64-bit)</Property>
+				<Property Name="DistPart[3].SoftDep[5].upgradeCode" Type="Str">{5F449D4C-83B9-492E-986B-6B85A29C431D}</Property>
 				<Property Name="DistPart[3].SoftDep[6].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[6].productName" Type="Str">NI LabVIEW Web Server 2022</Property>
-				<Property Name="DistPart[3].SoftDep[6].upgradeCode" Type="Str">{0960380B-EA86-4E0C-8B57-14CD8CCF2C15}</Property>
+				<Property Name="DistPart[3].SoftDep[6].productName" Type="Str">NI mDNS Responder 24.5</Property>
+				<Property Name="DistPart[3].SoftDep[6].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
 				<Property Name="DistPart[3].SoftDep[7].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[7].productName" Type="Str">NI mDNS Responder 22.5</Property>
-				<Property Name="DistPart[3].SoftDep[7].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
+				<Property Name="DistPart[3].SoftDep[7].productName" Type="Str">Math Kernel Libraries 2017</Property>
+				<Property Name="DistPart[3].SoftDep[7].upgradeCode" Type="Str">{699C1AC5-2CF2-4745-9674-B19536EBA8A3}</Property>
 				<Property Name="DistPart[3].SoftDep[8].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[8].productName" Type="Str">Math Kernel Libraries 2017</Property>
-				<Property Name="DistPart[3].SoftDep[8].upgradeCode" Type="Str">{699C1AC5-2CF2-4745-9674-B19536EBA8A3}</Property>
+				<Property Name="DistPart[3].SoftDep[8].productName" Type="Str">Math Kernel Libraries 2020</Property>
+				<Property Name="DistPart[3].SoftDep[8].upgradeCode" Type="Str">{9872BBBA-FB96-42A4-80A2-9605AC5CBCF1}</Property>
 				<Property Name="DistPart[3].SoftDep[9].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[9].productName" Type="Str">Math Kernel Libraries 2020</Property>
-				<Property Name="DistPart[3].SoftDep[9].upgradeCode" Type="Str">{9872BBBA-FB96-42A4-80A2-9605AC5CBCF1}</Property>
-				<Property Name="DistPart[3].SoftDepCount" Type="Int">12</Property>
-				<Property Name="DistPart[3].upgradeCode" Type="Str">{32C926F2-5C92-3338-8348-97AFEFCAD100}</Property>
+				<Property Name="DistPart[3].SoftDep[9].productName" Type="Str">NI VC2015 Runtime</Property>
+				<Property Name="DistPart[3].SoftDep[9].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
+				<Property Name="DistPart[3].SoftDepCount" Type="Int">11</Property>
+				<Property Name="DistPart[3].upgradeCode" Type="Str">{B2695A3E-34C2-3082-9B16-BB16F4DF1A07}</Property>
 				<Property Name="DistPartCount" Type="Int">4</Property>
 				<Property Name="INST_author" Type="Str">NASA</Property>
 				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
@@ -504,9 +510,9 @@
 				<Property Name="INST_includeError" Type="Bool">false</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">RIMAS</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.5</Property>
-				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">22308000</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.7</Property>
+				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
+				<Property Name="InstSpecVersion" Type="Str">24308000</Property>
 				<Property Name="MSI_arpCompany" Type="Str">NASA</Property>
 				<Property Name="MSI_arpURL" Type="Str">http://www.nasa.com/</Property>
 				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
@@ -533,7 +539,7 @@
 				<Property Name="Source[0].type" Type="Str">EXE</Property>
 				<Property Name="Source[1].dest" Type="Str">{C5D66D9E-89DD-4FA4-ABCA-556E5360183A}</Property>
 				<Property Name="Source[1].name" Type="Str">cfitsio.dll</Property>
-				<Property Name="Source[1].tag" Type="Ref"></Property>
+				<Property Name="Source[1].tag" Type="Ref">/</Property>
 				<Property Name="Source[1].type" Type="Str">File</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
 			</Item>
@@ -600,46 +606,31 @@
 				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
 				<Property Name="DestinationCount" Type="Int">1</Property>
 				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{A6603764-BA80-48E9-9E68-1C876DDDC916}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2022 Q3 Patch 1</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{D99BB605-7D9D-4468-A088-6CC200D0A008}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2024 Q3 (64-bit)</Property>
 				<Property Name="DistPart[0].SoftDep[0].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[0].productName" Type="Str">NI ActiveX Container</Property>
+				<Property Name="DistPart[0].SoftDep[0].productName" Type="Str">NI ActiveX Container (64-bit)</Property>
 				<Property Name="DistPart[0].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
 				<Property Name="DistPart[0].SoftDep[1].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[1].productName" Type="Str">NI Deployment Framework 2022</Property>
-				<Property Name="DistPart[0].SoftDep[1].upgradeCode" Type="Str">{838942E4-B73C-492E-81A3-AA1E291FD0DC}</Property>
-				<Property Name="DistPart[0].SoftDep[10].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[10].productName" Type="Str">NI VC2015 Runtime</Property>
-				<Property Name="DistPart[0].SoftDep[10].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
-				<Property Name="DistPart[0].SoftDep[11].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[11].productName" Type="Str">NI TDM Streaming 22.3</Property>
-				<Property Name="DistPart[0].SoftDep[11].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
+				<Property Name="DistPart[0].SoftDep[1].productName" Type="Str">NI Logos 24.1</Property>
+				<Property Name="DistPart[0].SoftDep[1].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
 				<Property Name="DistPart[0].SoftDep[2].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[2].productName" Type="Str">NI Error Reporting 2020</Property>
-				<Property Name="DistPart[0].SoftDep[2].upgradeCode" Type="Str">{42E818C6-2B08-4DE7-BD91-B0FD704C119A}</Property>
+				<Property Name="DistPart[0].SoftDep[2].productName" Type="Str">NI mDNS Responder 24.5</Property>
+				<Property Name="DistPart[0].SoftDep[2].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
 				<Property Name="DistPart[0].SoftDep[3].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[3].productName" Type="Str">NI LabVIEW Real-Time NBFifo 2022</Property>
-				<Property Name="DistPart[0].SoftDep[3].upgradeCode" Type="Str">{662E78D2-A4FF-3910-B34B-AE7298505A08}</Property>
+				<Property Name="DistPart[0].SoftDep[3].productName" Type="Str">Math Kernel Libraries 2017</Property>
+				<Property Name="DistPart[0].SoftDep[3].upgradeCode" Type="Str">{699C1AC5-2CF2-4745-9674-B19536EBA8A3}</Property>
 				<Property Name="DistPart[0].SoftDep[4].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[4].productName" Type="Str">NI LabVIEW Runtime 2022 Q3 Non-English Support.</Property>
-				<Property Name="DistPart[0].SoftDep[4].upgradeCode" Type="Str">{CF1A7558-7F6E-3A4D-92E2-1DD8C05011C0}</Property>
+				<Property Name="DistPart[0].SoftDep[4].productName" Type="Str">Math Kernel Libraries 2020</Property>
+				<Property Name="DistPart[0].SoftDep[4].upgradeCode" Type="Str">{9872BBBA-FB96-42A4-80A2-9605AC5CBCF1}</Property>
 				<Property Name="DistPart[0].SoftDep[5].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[5].productName" Type="Str">NI Logos 22.3</Property>
-				<Property Name="DistPart[0].SoftDep[5].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
+				<Property Name="DistPart[0].SoftDep[5].productName" Type="Str">NI VC2015 Runtime</Property>
+				<Property Name="DistPart[0].SoftDep[5].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
 				<Property Name="DistPart[0].SoftDep[6].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[6].productName" Type="Str">NI LabVIEW Web Server 2022</Property>
-				<Property Name="DistPart[0].SoftDep[6].upgradeCode" Type="Str">{0960380B-EA86-4E0C-8B57-14CD8CCF2C15}</Property>
-				<Property Name="DistPart[0].SoftDep[7].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[7].productName" Type="Str">NI mDNS Responder 22.5</Property>
-				<Property Name="DistPart[0].SoftDep[7].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
-				<Property Name="DistPart[0].SoftDep[8].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[8].productName" Type="Str">Math Kernel Libraries 2017</Property>
-				<Property Name="DistPart[0].SoftDep[8].upgradeCode" Type="Str">{699C1AC5-2CF2-4745-9674-B19536EBA8A3}</Property>
-				<Property Name="DistPart[0].SoftDep[9].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[9].productName" Type="Str">Math Kernel Libraries 2020</Property>
-				<Property Name="DistPart[0].SoftDep[9].upgradeCode" Type="Str">{9872BBBA-FB96-42A4-80A2-9605AC5CBCF1}</Property>
-				<Property Name="DistPart[0].SoftDepCount" Type="Int">12</Property>
-				<Property Name="DistPart[0].upgradeCode" Type="Str">{32C926F2-5C92-3338-8348-97AFEFCAD100}</Property>
+				<Property Name="DistPart[0].SoftDep[6].productName" Type="Str">NI TDM Streaming 24.3</Property>
+				<Property Name="DistPart[0].SoftDep[6].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
+				<Property Name="DistPart[0].SoftDepCount" Type="Int">7</Property>
+				<Property Name="DistPart[0].upgradeCode" Type="Str">{B2695A3E-34C2-3082-9B16-BB16F4DF1A07}</Property>
 				<Property Name="DistPartCount" Type="Int">1</Property>
 				<Property Name="INST_author" Type="Str">NASA</Property>
 				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
@@ -650,8 +641,8 @@
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">RIMAS Telescope Test</Property>
 				<Property Name="INST_productVersion" Type="Str">1.0.2</Property>
-				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">22308000</Property>
+				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
+				<Property Name="InstSpecVersion" Type="Str">24308000</Property>
 				<Property Name="MSI_arpCompany" Type="Str">NASA</Property>
 				<Property Name="MSI_arpURL" Type="Str">http://www.nasa.com/</Property>
 				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>

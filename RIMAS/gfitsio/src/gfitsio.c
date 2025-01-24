@@ -15,6 +15,9 @@
 #ifdef _WIN32
 	#include <windows.h>
 	#define EXPORT _declspec (dllexport)
+	//#define EXPORT _stdcall(dllexport)
+	//#define APIENTRY __stdcall
+	//#define EXPORT __stdcall (dllexport)
 	#define PATH_MAX 256
 #endif
 
@@ -255,6 +258,7 @@ EXPORT MgErr gfits_open_file(RefnumHdl  handle
 	// File opened successfully, so register the cleanup callback function
 	refnum->magic = kMagic;
 	StrCpy(refnum->filename,filename);
+
 	RTSetCleanupProc((CleanupProcPtr)CleanupIdleProc
 	                ,(UPtr)refnum
 	                ,kCleanOnIdle);
@@ -717,6 +721,7 @@ EXPORT MgErr gfits_get_img_equivtype(RefnumHdl handle
 	if (!refnum || (refnum->magic != kMagic))
 		return mgArgErr;
 
+	
 	return fits_get_img_equivtype(refnum->fptr
 	                             ,bitpix
 	                             ,&status);
@@ -1061,10 +1066,11 @@ EXPORT MgErr gfits_write_col(RefnumHdl handle
 	Refnum refnum = handle ? *handle : NULL;
 	MgErr  status  = noErr;
 	int32  typecode, repeat, offset;
-
+	
 	// If the refnum isn't valid return an error
 	if (!refnum || (refnum->magic != kMagic))
 		return mgArgErr;
+
 
 	// CFITSIO treats TSTRING differently for this function.
 	// It expects a char** instead of the normal char*

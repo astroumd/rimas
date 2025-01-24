@@ -1,0 +1,6 @@
+LABVIEW="C:\Program Files (x86)\National Instruments\LabVIEW 2021"
+VSI="C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.42.34433"
+VSL="C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.42.34433\lib\x86"
+gfitsio.dll: gfitsio.c 
+	cl /LD /I$(LABVIEW)\cintools /I$(VSI)\include gfitsio.c  /link /LIBPATH:$(VSL) user32.lib cfitsio.lib  $(LABVIEW)\cintools\labview.lib 
+
