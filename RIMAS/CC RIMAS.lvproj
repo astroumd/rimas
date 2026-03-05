@@ -367,17 +367,17 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{993CE843-CE74-4B61-89F6-B06A97D61216}</Property>
-				<Property Name="Bld_version.build" Type="Int">31</Property>
+				<Property Name="Bld_version.build" Type="Int">35</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">RIMAS CC.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/RIMAS Camera Control/RIMAS CC.exe</Property>
+				<Property Name="Destination[0].destName" Type="Str">RIMAS Instrument Control.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/RIMAS Camera Control/RIMAS Instrument Control.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/RIMAS Camera Control/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/rimas-icon-v2.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{C1F28750-BF19-42DA-A040-44BD8FAD395F}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{4F4D4868-D7DA-43A2-983C-7E67EA8B438F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/CC Main.vi</Property>
@@ -444,7 +444,7 @@
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2023 NASA</Property>
 				<Property Name="TgtF_productName" Type="Str">RIMAS Camera Control</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{278A44B4-6BC3-45D8-BA88-8CE654B0251D}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">RIMAS CC.exe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">RIMAS Instrument Control.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 			<Item Name="RIMAS Installer" Type="Installer">
